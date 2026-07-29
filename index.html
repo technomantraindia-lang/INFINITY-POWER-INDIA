@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinity Power India | Industrial Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <header class="site-header" id="top">
+    <div class="nav-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="36" height="36">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="#00e5ff" stroke-width="1.5"/>
+            <path d="M12 22 L20 8 L28 22 Z" fill="#ff3b3b" opacity="0.9"/>
+            <path d="M14 24 L20 14 L26 24" fill="none" stroke="#00e5ff" stroke-width="2"/>
+            <circle cx="20" cy="26" r="3" fill="#00e5ff"/>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <strong>INFINITY</strong>
+          <span>POWER INDIA</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#top" class="active">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#process">Process</a>
+        <a href="#gallery">Projects</a>
+        <a href="#inquiry">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+919876543210" class="nav-phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 98765 43210
+        </a>
+        <a href="#inquiry" class="btn btn-gold">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-scan"></div>
+      </div>
+
+      <div class="container hero-content">
+        <p class="hero-tag reveal">SMARTER AUTOMATION, STRONGER INDUSTRIES.</p>
+        <h1 class="reveal delay-1">
+          Powering Industrial Automation<br />
+          with <span class="text-gold">Innovation</span>
+        </h1>
+        <p class="hero-sub reveal delay-2">
+          End-to-end industrial automation solutions that drive efficiency, reliability and growth.
+        </p>
+
+        <ul class="hero-badges reveal delay-3">
+          <li>
+            <span class="badge-icon">⚙</span>
+            Engineered for Performance
+          </li>
+          <li>
+            <span class="badge-icon">◆</span>
+            Built for Reliability
+          </li>
+          <li>
+            <span class="badge-icon">◎</span>
+            Trusted by Industries
+          </li>
+        </ul>
+
+        <div class="hero-ctas reveal delay-4">
+          <a href="#products" class="btn btn-gold btn-lg">
+            Explore Solutions
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#inquiry" class="btn btn-outline btn-lg">Download Brochure</a>
+        </div>
+      </div>
+
+      <div class="stats-bar reveal">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <span class="stat-num" data-count="10" data-suffix="+">0</span>
+            <span class="stat-label">Years of Excellence</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="250" data-suffix="+">0</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="800" data-suffix="+">0</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="24" data-suffix="/7">0</span>
+            <span class="stat-label">Support & Service</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Our <span class="text-cyan">Products</span></h2>
+          <p>Intelligent products for every automation need.</p>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card reveal">
+            <div class="product-visual">
+              <img src="./assets/products/plc-card.png" alt="PLC controller" loading="lazy" />
+            </div>
+            <h3>PLC</h3>
+            <p>Programmable Logic Controllers</p>
+          </article>
+          <article class="product-card reveal delay-1">
+            <div class="product-visual">
+              <img src="./assets/products/vfd-card.png" alt="Variable frequency drive" loading="lazy" />
+            </div>
+            <h3>VFD</h3>
+            <p>Drives & Soft Starters</p>
+          </article>
+          <article class="product-card reveal delay-2">
+            <div class="product-visual">
+              <img src="./assets/products/control-panel-card.png" alt="Control panel cabinet" loading="lazy" />
+            </div>
+            <h3>Control Panels</h3>
+            <p>Custom Engineered Panels</p>
+          </article>
+          <article class="product-card reveal delay-3">
+            <div class="product-visual">
+              <img src="./assets/products/hmi-card.png" alt="HMI display panel" loading="lazy" />
+            </div>
+            <h3>HMI</h3>
+            <p>Human Machine Interface</p>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-visual">
+              <img src="./assets/products/servo-drive-card.png" alt="Servo drive controller" loading="lazy" />
+            </div>
+            <h3>Servo Drives</h3>
+            <p>Precision Motion Control</p>
+          </article>
+          <article class="product-card reveal delay-1">
+            <div class="product-visual">
+              <img src="./assets/products/mcc-pcc-apfc-card.png" alt="MCC PCC APFC power distribution panel" loading="lazy" />
+            </div>
+            <h3>MCC / PCC / APFC</h3>
+            <p>Power Distribution Panels</p>
+          </article>
+          <article class="product-card reveal delay-2">
+            <div class="product-visual">
+              <img src="./assets/products/power-supply-card.png" alt="Industrial power supply unit" loading="lazy" />
+            </div>
+            <h3>Power Supplies</h3>
+            <p>Industrial Grade Units</p>
+          </article>
+        </div>
+
+        <div class="section-cta reveal">
+          <a href="#inquiry" class="link-arrow">View All Products <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="container services-layout">
+        <div class="services-visual reveal">
+          <div class="services-photo">
+            <img src="images/services-technician.jpg" alt="Industrial technician monitoring control systems" />
+            <div class="services-overlay-card">
+              <h3>Service That Keeps You Ahead</h3>
+              <div class="services-stats">
+                <div class="svc-stat">
+                  <span class="svc-stat-icon" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <path d="M20 6 L32 12 v10 c0 8-5.5 13-12 16C13.5 35 8 30 8 22V12z"/>
+                      <path d="M14 20h12M20 14v12"/>
+                      <circle cx="20" cy="20" r="3"/>
+                    </svg>
+                  </span>
+                  <strong>24/7 Support</strong>
+                </div>
+                <div class="svc-stat">
+                  <span class="svc-stat-icon" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <circle cx="20" cy="20" r="12"/>
+                      <path d="M8 20h24M20 8c4 4 4 20 0 24M20 8c-4 4-4 20 0 24"/>
+                      <circle cx="20" cy="20" r="3"/>
+                    </svg>
+                  </span>
+                  <strong>95% Client Retention</strong>
+                </div>
+                <div class="svc-stat">
+                  <span class="svc-stat-icon" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <circle cx="20" cy="20" r="12"/>
+                      <circle cx="20" cy="20" r="7"/>
+                      <circle cx="20" cy="20" r="2.5"/>
+                      <path d="M20 6v4M20 30v4M6 20h4M30 20h4"/>
+                    </svg>
+                  </span>
+                  <strong>100% Quality Focus</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-right">
+          <div class="services-head reveal">
+            <h2>Our Services</h2>
+            <p>Complete lifecycle support for seamless automation.</p>
+          </div>
+
+          <div class="services-list">
+            <a href="#inquiry" class="service-card reveal">
+              <span class="service-num">01</span>
+              <span class="service-copy">
+                <span class="service-title">Industrial Automation</span>
+                <span class="service-note">End-to-end automation solutions</span>
+              </span>
+              <span class="service-arrow">&rsaquo;</span>
+            </a>
+            <a href="#inquiry" class="service-card reveal delay-1">
+              <span class="service-num">02</span>
+              <span class="service-copy">
+                <span class="service-title">Turnkey Projects</span>
+                <span class="service-note">Complete system commissioning</span>
+              </span>
+              <span class="service-arrow">&rsaquo;</span>
+            </a>
+            <a href="#inquiry" class="service-card reveal delay-2">
+              <span class="service-num">03</span>
+              <span class="service-copy">
+                <span class="service-title">PLC Programming</span>
+                <span class="service-note">Efficient &amp; reliable PLC solutions</span>
+              </span>
+              <span class="service-arrow">&rsaquo;</span>
+            </a>
+            <a href="#inquiry" class="service-card reveal">
+              <span class="service-num">04</span>
+              <span class="service-copy">
+                <span class="service-title">HMI Development</span>
+                <span class="service-note">Custom HMI design &amp; integration</span>
+              </span>
+              <span class="service-arrow">&rsaquo;</span>
+            </a>
+            <a href="#inquiry" class="service-card reveal delay-1">
+              <span class="service-num">05</span>
+              <span class="service-copy">
+                <span class="service-title">SCADA Development</span>
+                <span class="service-note">Real-time monitoring &amp; control</span>
+              </span>
+              <span class="service-arrow">&rsaquo;</span>
+            </a>
+            <a href="#inquiry" class="service-card reveal delay-2">
+              <span class="service-num">06</span>
+              <span class="service-copy">
+                <span class="service-title">VFD Commissioning</span>
+                <span class="service-note">Installation &amp; commissioning</span>
+              </span>
+              <span class="service-arrow">&rsaquo;</span>
+            </a>
+            <a href="#inquiry" class="service-card reveal">
+              <span class="service-num">07</span>
+              <span class="service-copy">
+                <span class="service-title">Servo Commissioning</span>
+                <span class="service-note">Precision motion setup &amp; tuning</span>
+              </span>
+              <span class="service-arrow">&rsaquo;</span>
+            </a>
+            <a href="#inquiry" class="service-card reveal delay-1">
+              <span class="service-num">08</span>
+              <span class="service-copy">
+                <span class="service-title">AMC</span>
+                <span class="service-note">Annual Maintenance Contracts</span>
+              </span>
+              <span class="service-arrow">&rsaquo;</span>
+            </a>
+            <a href="#inquiry" class="service-card reveal delay-2">
+              <span class="service-num">09</span>
+              <span class="service-copy">
+                <span class="service-title">Repair &amp; Maintenance</span>
+                <span class="service-note">Quick support, minimal downtime</span>
+              </span>
+              <span class="service-arrow">&rsaquo;</span>
+            </a>
+            <a href="#inquiry" class="service-card reveal">
+              <span class="service-num">10</span>
+              <span class="service-copy">
+                <span class="service-title">Energy Saving Solutions</span>
+                <span class="service-note">Optimize energy, lower costs</span>
+              </span>
+              <span class="service-arrow">&rsaquo;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section class="section industries" id="industries">
+      <div class="container">
+        <div class="industries-hub reveal">
+          <div class="industries-title">
+            <h2>Industries We Serve</h2>
+            <p>Solutions tailored for every industry.</p>
+          </div>
+
+          <svg class="hub-lines" viewBox="0 0 1000 250" preserveAspectRatio="none" aria-hidden="true">
+            <g class="circuit-paths">
+              <path d="M500 130 C454 130 445 44 360 44 H288" />
+              <path d="M500 130 C458 130 446 88 364 88 H288" />
+              <path d="M500 130 C458 130 443 131 364 131 H288" />
+              <path d="M500 130 C458 130 446 175 364 175 H288" />
+              <path d="M500 130 C454 130 443 224 363 224" />
+              <path d="M500 130 C546 130 555 44 640 44 H675" />
+              <path d="M500 130 C542 130 554 88 636 88 H675" />
+              <path d="M500 130 C542 130 557 131 636 131 H675" />
+              <path d="M500 130 C542 130 554 175 636 175 H675" />
+              <path d="M500 130 C546 130 557 224 610 224" />
+            </g>
+            <g class="circuit-points">
+              <circle cx="288" cy="44" r="3" />
+              <circle cx="288" cy="88" r="3" />
+              <circle cx="288" cy="131" r="3" />
+              <circle cx="288" cy="175" r="3" />
+              <circle cx="363" cy="224" r="3" />
+              <circle cx="675" cy="44" r="3" />
+              <circle cx="675" cy="88" r="3" />
+              <circle cx="675" cy="131" r="3" />
+              <circle cx="675" cy="175" r="3" />
+              <circle cx="610" cy="224" r="3" />
+            </g>
+          </svg>
+
+          <div class="hub-center">
+            <div class="hub-ring"></div>
+            <div class="hub-core">
+              <span class="hub-logo" aria-hidden="true">
+                <svg viewBox="0 0 40 40" width="50" height="50">
+                  <circle cx="20" cy="20" r="18" fill="none" stroke="#00e5ff" stroke-width="1.5"/>
+                  <path d="M12 22 L20 8 L28 22 Z" fill="#ff3b3b" opacity="0.9"/>
+                  <path d="M14 24 L20 14 L26 24" fill="none" stroke="#00e5ff" stroke-width="2"/>
+                  <circle cx="20" cy="26" r="3" fill="#00e5ff"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="industry-node n1">
+            <span class="industry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 4h12v16H6zM9 7h6M9 11h6M9 15h6"/><path d="M4 20h16"/></svg>
+            </span>
+            <span>Textile</span>
+          </div>
+          <div class="industry-node n2">
+            <span class="industry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 17h14"/><path d="M7 17l3-10h4l3 10"/><path d="M8.5 12h7"/></svg>
+            </span>
+            <span>Steel</span>
+          </div>
+          <div class="industry-node n3">
+            <span class="industry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 4v16"/><path d="M6 10c0 2 2 3 3 3s3-1 3-3"/><path d="M12 10c0 2 2 3 3 3s3-1 3-3"/><path d="M4 10h16"/></svg>
+            </span>
+            <span>Food Processing</span>
+          </div>
+          <div class="industry-node n4">
+            <span class="industry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 4c2 3 2 5 0 8"/><path d="M15 4c-2 3-2 5 0 8"/><path d="M7 16c0-2 2-4 5-4s5 2 5 4-2 4-5 4-5-2-5-4z"/></svg>
+            </span>
+            <span>Pharmaceutical</span>
+          </div>
+          <div class="industry-node n5">
+            <span class="industry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10 3v5l-5 8a3 3 0 0 0 3 5h8a3 3 0 0 0 3-5l-5-8V3"/><path d="M8 13h8"/></svg>
+            </span>
+            <span>Chemical</span>
+          </div>
+          <div class="industry-node n6">
+            <span class="industry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 7h10v10H7z"/><path d="M10 10h4v4h-4z"/><path d="M7 12H4M20 12h-3"/></svg>
+            </span>
+            <span>Plastic</span>
+          </div>
+          <div class="industry-node n7">
+            <span class="industry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 7l10 10"/><path d="M17 7L7 17"/><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="7" cy="17" r="2"/></svg>
+            </span>
+            <span>Robotics &amp; Automation</span>
+          </div>
+          <div class="industry-node n8">
+            <span class="industry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 4c4 5 4 8 0 12-4-4-4-7 0-12z"/><path d="M12 10v8"/></svg>
+            </span>
+            <span>CNC / SPM</span>
+          </div>
+          <div class="industry-node n9">
+            <span class="industry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 4l7 4v8l-7 4-7-4V8z"/><path d="M12 8l4 2v4l-4 2-4-2v-4z"/></svg>
+            </span>
+            <span>Packaging</span>
+          </div>
+          <div class="industry-node n10">
+            <span class="industry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 8c0-2 1.5-4 3.5-4S13 6 13 8s-1.5 4-3.5 4S6 10 6 8z"/><path d="M11 16c0-2 1.5-4 3.5-4S18 14 18 16s-1.5 4-3.5 4S11 18 11 16z"/><path d="M8 11l7 2"/></svg>
+            </span>
+            <span>Water Treatment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY + PROCESS -->
+    <section class="section why-process" id="about">
+      <div class="container">
+        <div class="why-head reveal">
+          <h2>Why Choose Infinity Power India?</h2>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <div class="why-copy">
+              <p class="why-kicker">Expertise &amp; Experience</p>
+              <h3><span data-count="10" data-suffix="+">0</span></h3>
+              <p class="why-label">Years</p>
+              <p class="why-detail">In industrial automation</p>
+            </div>
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="14"/><circle cx="32" cy="32" r="5"/><path d="M32 7v11M32 46v11M7 32h11M46 32h11M14.3 14.3l7.8 7.8M41.9 41.9l7.8 7.8M49.7 14.3l-7.8 7.8M22.1 41.9l-7.8 7.8"/></svg>
+            </div>
+          </article>
+          <article class="why-card reveal delay-1">
+            <div class="why-copy">
+              <p class="why-kicker">Quality &amp; Reliability</p>
+              <h3><span data-count="99" data-suffix="%">0</span></h3>
+              <p class="why-label">Quality Assurance</p>
+              <p class="why-detail">Premium products from trusted brands</p>
+            </div>
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="14"/><circle cx="32" cy="32" r="5"/><path d="M32 7v11M32 46v11M7 32h11M46 32h11M14.3 14.3l7.8 7.8M41.9 41.9l7.8 7.8M49.7 14.3l-7.8 7.8M22.1 41.9l-7.8 7.8"/><path d="m25 32 5 5 10-12"/></svg>
+            </div>
+          </article>
+          <article class="why-card reveal delay-2">
+            <div class="why-copy">
+              <p class="why-kicker">Customized Solutions</p>
+              <h3><span data-count="100" data-suffix="%">0</span></h3>
+              <p class="why-label">Tailored</p>
+              <p class="why-detail">Solutions designed for your unique needs</p>
+            </div>
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle cx="32" cy="24" r="14"/><circle cx="32" cy="24" r="6"/><path d="m22 38-6 17 16-7 16 7-6-17M32 17v14M25 24h14"/></svg>
+            </div>
+          </article>
+          <article class="why-card reveal delay-3">
+            <div class="why-copy">
+              <p class="why-kicker">Support You Can Trust</p>
+              <h3><span data-count="24" data-suffix="/7">0</span></h3>
+              <p class="why-label">Support</p>
+              <p class="why-detail">Quick response &amp; dedicated service</p>
+            </div>
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M13 35v-4a19 19 0 0 1 38 0v4"/><path d="M13 34h8v14h-5a3 3 0 0 1-3-3zM51 34h-8v14h5a3 3 0 0 0 3-3zM43 49c-2 6-7 8-14 8h-4"/><path d="M31 57h-6"/><circle cx="32" cy="18" r="2"/></svg>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="process-block process-full" id="process">
+        <div class="section-head reveal">
+          <h2>Our Process</h2>
+          <p>A proven process that ensures success every time.</p>
+        </div>
+
+        <div class="process-track reveal" aria-label="Our process steps">
+          <article class="process-card">
+            <span class="process-num">01</span>
+            <h4>Requirement Study</h4>
+            <p>Understand your needs and application analysis</p>
+          </article>
+
+          <span class="process-arrow" aria-hidden="true"></span>
+
+          <article class="process-card">
+            <span class="process-num">02</span>
+            <h4>Design &amp; Engineering</h4>
+            <p>Develop optimized solutions with detailed engineering.</p>
+          </article>
+
+          <span class="process-arrow" aria-hidden="true"></span>
+
+          <article class="process-card">
+            <span class="process-num">03</span>
+            <h4>Implementation</h4>
+            <p>Precision installation &amp; configuration</p>
+          </article>
+
+          <span class="process-arrow" aria-hidden="true"></span>
+
+          <article class="process-card">
+            <span class="process-num">04</span>
+            <h4>Support &amp; Maintenance</h4>
+            <p>Ongoing support &amp; maximum uptime.</p>
+          </article>
+
+          <span class="process-arrow" aria-hidden="true"></span>
+
+          <article class="process-card">
+            <span class="process-num">05</span>
+            <h4>Review &amp; Optimization</h4>
+            <p>Continuous improvement for better efficiency</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="section clients clients-full" id="clients">
+      <div class="section-head reveal">
+        <h2>Our Clients</h2>
+        <p>Trusted by leading industries</p>
+      </div>
+
+      <div class="clients-slider reveal">
+        <button type="button" class="clients-nav clients-prev" id="clients-prev" aria-label="Previous clients">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+
+        <div class="clients-viewport" id="clients-viewport">
+          <div class="clients-track" id="clients-track">
+            <div class="client-tile">
+              <span class="logo-mark logo-johnson">Johnson<br />Screens</span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-accep">
+                <i class="logo-dot" aria-hidden="true"></i>
+                Accepplence<br />Group
+              </span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-amul">
+                Amul
+                <small>The Taste of India</small>
+              </span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-hyfun">
+                HyFun
+                <small>FOODS</small>
+              </span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-balaji">
+                <i class="logo-badge" aria-hidden="true">B</i>
+                BALAJI
+              </span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-arvind">
+                ARVIND
+                <small>MILLS</small>
+              </span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-tata">TATA<br />STEEL</span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-tata">TATA<br />MOTORS</span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-reliance">RELIANCE</span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-lt">L&amp;T</span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-siemens">SIEMENS</span>
+            </div>
+            <div class="client-tile">
+              <span class="logo-mark logo-abb">ABB</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="clients-nav clients-next" id="clients-next" aria-label="Next clients">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Projects &amp; Gallery</h2>
+          <p>Real solutions. Real impact.</p>
+        </div>
+
+        <div class="gallery-frame reveal" id="gallery-slider">
+          <div class="gallery-slides">
+            <!-- Slide 1 -->
+            <div class="gallery-slide is-active" data-slide="0">
+              <article class="gallery-featured">
+                <img src="images/gallery/featured-plant.jpg" alt="Manufacturing plant automation control panels" />
+                <div class="gallery-overlay">
+                  <span class="gallery-kicker">Featured Project</span>
+                  <h3>End-to-End Automation for Manufacturing Plant</h3>
+                  <a href="#inquiry" class="btn btn-gold">
+                    View Case Study
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </article>
+
+              <div class="gallery-grid">
+                <article class="gallery-card gallery-card-wide">
+                  <img src="images/gallery/plc-scada.jpg" alt="PLC and SCADA system control room" />
+                  <h4>PLC &amp; SCADA System</h4>
+                </article>
+                <article class="gallery-card gallery-card-wide">
+                  <img src="images/gallery/vfd-install.jpg" alt="VFD installation electrical racks" />
+                  <h4>VFD Installation</h4>
+                </article>
+                <article class="gallery-card">
+                  <img src="images/gallery/control-panel.jpg" alt="Control panel manufacturing wiring" />
+                  <h4>Control Panel Manufacturing</h4>
+                </article>
+                <article class="gallery-card">
+                  <img src="images/gallery/industrial-auto.jpg" alt="Industrial automation project" />
+                  <h4>Industrial Automation Project</h4>
+                </article>
+                <article class="gallery-card">
+                  <img src="images/gallery/machine-auto.jpg" alt="Machine automation factory floor" />
+                  <h4>Machine Automation</h4>
+                </article>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="gallery-slide" data-slide="1">
+              <article class="gallery-featured">
+                <img src="images/gallery/featured-switchgear.jpg" alt="Industrial switchgear and control cabinets" />
+                <div class="gallery-overlay">
+                  <span class="gallery-kicker">Featured Project</span>
+                  <h3>Smart Switchgear &amp; Power Distribution Upgrade</h3>
+                  <a href="#inquiry" class="btn btn-gold">
+                    View Case Study
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </article>
+
+              <div class="gallery-grid">
+                <article class="gallery-card gallery-card-wide">
+                  <img src="images/gallery/vfd-install.jpg" alt="Drive system commissioning" />
+                  <h4>Drive System Commissioning</h4>
+                </article>
+                <article class="gallery-card gallery-card-wide">
+                  <img src="images/gallery/plc-scada.jpg" alt="SCADA monitoring room" />
+                  <h4>SCADA Monitoring Room</h4>
+                </article>
+                <article class="gallery-card">
+                  <img src="images/gallery/machine-auto.jpg" alt="CNC line integration" />
+                  <h4>CNC Line Integration</h4>
+                </article>
+                <article class="gallery-card">
+                  <img src="images/gallery/control-panel.jpg" alt="Custom panel assembly" />
+                  <h4>Custom Panel Assembly</h4>
+                </article>
+                <article class="gallery-card">
+                  <img src="images/gallery/industrial-auto.jpg" alt="Process plant automation" />
+                  <h4>Process Plant Automation</h4>
+                </article>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="gallery-slide" data-slide="2">
+              <article class="gallery-featured">
+                <img src="images/gallery/featured-automation.jpg" alt="Factory automation hall" />
+                <div class="gallery-overlay">
+                  <span class="gallery-kicker">Featured Project</span>
+                  <h3>Turnkey Factory Automation &amp; Retrofitting</h3>
+                  <a href="#inquiry" class="btn btn-gold">
+                    View Case Study
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </article>
+
+              <div class="gallery-grid">
+                <article class="gallery-card gallery-card-wide">
+                  <img src="images/gallery/industrial-auto.jpg" alt="Process line upgrade" />
+                  <h4>Process Line Upgrade</h4>
+                </article>
+                <article class="gallery-card gallery-card-wide">
+                  <img src="images/gallery/machine-auto.jpg" alt="Machine cell automation" />
+                  <h4>Machine Cell Automation</h4>
+                </article>
+                <article class="gallery-card">
+                  <img src="images/gallery/plc-scada.jpg" alt="HMI dashboard design" />
+                  <h4>HMI Dashboard Design</h4>
+                </article>
+                <article class="gallery-card">
+                  <img src="images/gallery/vfd-install.jpg" alt="Motor control center" />
+                  <h4>Motor Control Center</h4>
+                </article>
+                <article class="gallery-card">
+                  <img src="images/gallery/control-panel.jpg" alt="Panel testing and QA" />
+                  <h4>Panel Testing &amp; QA</h4>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-dots" id="gallery-dots" role="tablist" aria-label="Gallery pages">
+            <button type="button" class="gallery-dot is-active" data-index="0" aria-label="Gallery page 1"></button>
+            <button type="button" class="gallery-dot" data-index="1" aria-label="Gallery page 2"></button>
+            <button type="button" class="gallery-dot" data-index="2" aria-label="Gallery page 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INQUIRY -->
+    <section class="section inquiry" id="inquiry">
+      <div class="container inquiry-layout">
+        <!-- Brochure panel -->
+        <article class="contact-panel brochure-panel reveal">
+          <div class="brochure-copy">
+            <div class="panel-title-row">
+              <span class="panel-icon panel-icon-doc" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/>
+                  <path d="M14 3v5h5M9 13h6M9 17h6"/>
+                </svg>
+              </span>
+              <div>
+                <h2>Download Our Brochure</h2>
+                <p>Explore our products, services and solutions in detail.</p>
+              </div>
+            </div>
+
+            <ul class="brochure-features">
+              <li>
+                <span class="check-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
+                </span>
+                Product Catalog
+              </li>
+              <li>
+                <span class="check-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
+                </span>
+                Services Overview
+              </li>
+              <li>
+                <span class="check-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
+                </span>
+                Industry Solutions
+              </li>
+              <li>
+                <span class="check-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>
+                </span>
+                Project Highlights
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-orange" id="brochure-btn">
+              Download Brochure
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                <path d="M12 4v10M8 10l4 4 4-4"/>
+                <path d="M5 19h14"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="panel-visual">
+            <img src="images/brochure-3d.png?v=3" alt="Infinity Power India brochure" />
+          </div>
+        </article>
+
+        <!-- Inquiry panel -->
+        <article class="contact-panel inquiry-panel reveal delay-1">
+          <div class="inquiry-copy">
+            <h2>Quick Inquiry</h2>
+            <p class="inquiry-sub">Let's build the future together.</p>
+
+            <form id="inquiry-form">
+              <div class="form-row">
+                <label>
+                  <input type="text" name="name" required placeholder="Your Name" />
+                </label>
+                <label>
+                  <input type="email" name="email" required placeholder="Your Email" />
+                </label>
+              </div>
+              <div class="form-row">
+                <label>
+                  <input type="tel" name="phone" required placeholder="Your Phone" />
+                </label>
+                <label>
+                  <input type="text" name="company" placeholder="Company Name" />
+                </label>
+              </div>
+              <label>
+                <textarea name="requirement" rows="4" placeholder="Your Requirement"></textarea>
+              </label>
+
+              <div class="inquiry-actions">
+                <button type="submit" class="btn btn-orange">
+                  Send Inquiry
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </button>
+                <a href="https://wa.me/919979872722" class="btn btn-wa" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 32 32" width="18" height="18" fill="#25d366" aria-hidden="true"><path d="M16.1 3C9.3 3 3.8 8.4 3.8 15.1c0 2.1.6 4.1 1.6 5.9L4 29l8.2-2.1c1.7.9 3.6 1.4 5.5 1.4 6.8 0 12.3-5.5 12.3-12.2S22.9 3 16.1 3zm0 22.2c-1.7 0-3.4-.5-4.9-1.3l-.3-.2-4.9 1.3 1.3-4.7-.2-.4c-1-1.5-1.5-3.3-1.5-5.1 0-5.5 4.5-10 10.1-10s10.1 4.5 10.1 10-4.5 10-10.1 10zm5.5-7.5c-.3-.1-1.8-.9-2.1-1s-.5-.1-.7.1c-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.7-.9-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.3z"/></svg>
+                  Chat on WhatsApp
+                </a>
+              </div>
+              <p class="form-note" id="form-note" hidden>Thank you! We'll get back to you shortly.</p>
+            </form>
+          </div>
+
+          <div class="panel-visual panel-visual-robot">
+            <img src="images/holo-robot.png?v=3" alt="Holographic industrial robot arm" />
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="footer-logo">
+          <span class="footer-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <circle cx="24" cy="24" r="21" fill="none" stroke="#1ea7ff" stroke-width="2"/>
+              <circle cx="24" cy="24" r="15" fill="none" stroke="#1ea7ff" stroke-width="1" opacity="0.45"/>
+              <path d="M16 30 L24 10 L32 30 Z" fill="#e53935"/>
+              <path d="M20 28 L24 18 L28 28" fill="#ffc107"/>
+              <circle cx="24" cy="32" r="3.5" fill="#1ea7ff"/>
+            </svg>
+          </span>
+          <span class="footer-logo-text">
+            <span class="logo-line"><span class="c-blue">INFINITY</span> <span class="c-red">POWER</span> <span class="c-blue">INDIA</span></span>
+          </span>
+        </a>
+        <p class="footer-tagline">Powering Industrial Automation with Innovation</p>
+        <p class="footer-desc">We provide end-to-end industrial automation solutions with focus on quality, reliability and performance.</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v6M8 8v.01M12 17v-4a2 2 0 0 1 4 0v4"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M13 8h2M13 12h3M13 8v8M10 12h3"/></svg>
+          </a>
+          <a href="#" class="social-yt" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M23 12s0-3.6-.46-5.2a2.9 2.9 0 0 0-2-2C18.9 4.4 12 4.4 12 4.4s-6.9 0-8.54.4a2.9 2.9 0 0 0-2 2C1 8.4 1 12 1 12s0 3.6.46 5.2a2.9 2.9 0 0 0 2 2C5.1 19.6 12 19.6 12 19.6s6.9 0 8.54-.4a2.9 2.9 0 0 0 2-2C23 15.6 23 12 23 12z"/><path fill="#0a1424" d="M10 8.8v6.4l5.5-3.2z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#products">Solutions</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Projects</a></li>
+          <li><a href="#clients">Resources</a></li>
+          <li><a href="#inquiry">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Our Products</h4>
+        <ul>
+          <li><a href="#products">VFD</a></li>
+          <li><a href="#products">PLC</a></li>
+          <li><a href="#products">HMI</a></li>
+          <li><a href="#products">Servo Drives</a></li>
+          <li><a href="#products">Control Panels</a></li>
+          <li><a href="#products">MCC / PCC / APFC Panels</a></li>
+          <li><a href="#products">Soft Starters</a></li>
+          <li><a href="#products">Power Supplies</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#services">Industrial Automation</a></li>
+          <li><a href="#services">Turnkey Projects</a></li>
+          <li><a href="#services">PLC Programming</a></li>
+          <li><a href="#services">HMI Development</a></li>
+          <li><a href="#services">SCADA Development</a></li>
+          <li><a href="#services">VFD Commissioning</a></li>
+          <li><a href="#services">Servo Commissioning</a></li>
+          <li><a href="#services">AMC &amp; Maintenance</a></li>
+          <li><a href="#services">Repair &amp; Maintenance</a></li>
+          <li><a href="#services">Energy Saving Solutions</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <a href="tel:+919979872722">+91 99798 72722</a>
+          </li>
+          <li>
+            <span class="contact-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></svg>
+            </span>
+            <a href="mailto:infinitypowerindia@gmail.com">infinitypowerindia@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            </span>
+            <a href="https://www.infinitypowerindia.com" target="_blank" rel="noopener">www.infinitypowerindia.com</a>
+          </li>
+          <li>
+            <span class="contact-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </span>
+            <span>B/S, GIDC Estate, Makarpura, Vadodara - 390010, Gujarat, India</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Infinity Power India. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919979872722" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16.1 3C9.3 3 3.8 8.4 3.8 15.1c0 2.1.6 4.1 1.6 5.9L4 29l8.2-2.1c1.7.9 3.6 1.4 5.5 1.4 6.8 0 12.3-5.5 12.3-12.2S22.9 3 16.1 3zm0 22.2c-1.7 0-3.4-.5-4.9-1.3l-.3-.2-4.9 1.3 1.3-4.7-.2-.4c-1-1.5-1.5-3.3-1.5-5.1 0-5.5 4.5-10 10.1-10s10.1 4.5 10.1 10-4.5 10-10.1 10zm5.5-7.5c-.3-.1-1.8-.9-2.1-1s-.5-.1-.7.1c-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.7-.9-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.3z"/></svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

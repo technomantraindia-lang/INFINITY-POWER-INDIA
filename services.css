@@ -1,0 +1,441 @@
+/* ─────────────────────────────────────────────────────────────
+   SERVICES PAGE SPECIFIC STYLES
+   Matching srevice page.png reference layout exactly
+───────────────────────────────────────────────────────────── */
+
+/* Hero Banner */
+.srv-hero {
+  position: relative;
+  background: #031833 url('assets/hero-banner-reference.png') center center / cover no-repeat;
+  color: #ffffff;
+  padding: 85px 0 90px;
+  overflow: hidden;
+}
+
+.srv-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(3, 24, 51, 0.92) 0%, rgba(3, 24, 51, 0.82) 50%, rgba(3, 24, 51, 0.65) 100%);
+}
+
+.srv-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.srv-hero-badge {
+  display: inline-block;
+  background: rgba(229, 35, 39, 0.15);
+  border: 1px solid rgba(229, 35, 39, 0.4);
+  color: #ff4d4f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.srv-hero h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(38px, 4.5vw, 54px);
+  font-weight: 800;
+  margin: 0 0 14px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.srv-hero p {
+  max-width: 580px;
+  font-size: 15px;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.srv-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.srv-breadcrumbs a {
+  color: #e5e7eb;
+  transition: color 0.2s;
+}
+
+.srv-breadcrumbs a:hover {
+  color: #3b82f6;
+}
+
+.srv-breadcrumbs span {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* Eyebrow with horizontal accent lines */
+.red-eyebrow-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #e52327;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.red-eyebrow-accent::before,
+.red-eyebrow-accent::after {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 1.5px;
+  background: #e52327;
+  opacity: 0.7;
+}
+
+/* Section Common Header */
+.section-center-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 48px;
+}
+
+.section-center-head h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 800;
+  color: #081936;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+  line-height: 1.18;
+}
+
+.section-center-head p {
+  color: #64748b;
+  font-size: 14.5px;
+  margin: 0;
+  line-height: 1.65;
+}
+
+.section-center-head--dark h2 {
+  color: #ffffff;
+}
+
+.section-center-head--dark p {
+  color: #cbd5e1;
+}
+
+/* Section 1: What We Offer */
+.srv-offer {
+  padding: 85px 0;
+  background: #ffffff;
+}
+
+.services-grid-3x2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.srv-card {
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.srv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(3, 24, 51, 0.1);
+  border-color: #3b82f6;
+}
+
+.srv-card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 215px;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.srv-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+  transition: transform 0.4s ease;
+}
+
+.srv-card:hover .srv-card-img-wrap img {
+  transform: scale(1.06);
+}
+
+.srv-badge-icon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 48px;
+  height: 48px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.srv-card:hover .srv-badge-icon {
+  transform: scale(1.08);
+}
+
+.srv-card-body {
+  padding: 26px 22px 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.srv-card-body h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #081936;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+
+.srv-card-body p {
+  font-size: 13.5px;
+  color: #556070;
+  line-height: 1.65;
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+.srv-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2563eb;
+  transition: color 0.2s ease, gap 0.2s ease;
+  margin-top: auto;
+}
+
+.srv-card-link:hover {
+  color: #1d4ed8;
+  gap: 10px;
+}
+
+/* Section 2: Our Approach */
+.srv-approach {
+  position: relative;
+  padding: 90px 0;
+  background: #031833 url('assets/about-control-panel.png') center center / cover no-repeat;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.srv-approach::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(3, 24, 51, 0.95), rgba(3, 24, 51, 0.88));
+  z-index: 1;
+}
+
+.srv-approach .container {
+  position: relative;
+  z-index: 2;
+}
+
+.approach-steps-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.approach-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 32px 24px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.approach-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.approach-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.approach-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.approach-icon svg {
+  width: 38px;
+  height: 38px;
+  stroke: #ffffff;
+}
+
+.approach-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  margin-left: 2px;
+}
+
+.approach-arrow {
+  margin-left: auto;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+}
+
+.approach-item h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.approach-item p {
+  font-size: 13.5px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Section 3: Our Commitment */
+.srv-commitment {
+  padding: 85px 0;
+  background: #ffffff;
+}
+
+.commitment-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.commitment-card {
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 14px;
+  padding: 34px 14px 28px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.025);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.commitment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(3, 24, 51, 0.08);
+  border-color: #cbd5e1;
+}
+
+.commitment-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commitment-icon svg {
+  width: 44px;
+  height: 44px;
+  stroke: #2563eb;
+  stroke-width: 1.35px;
+  transition: transform 0.3s ease;
+}
+
+.commitment-card:hover .commitment-icon svg {
+  transform: scale(1.08);
+  stroke: #1d4ed8;
+}
+
+.commitment-card h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0b1f3a;
+  margin: 0 0 10px;
+}
+
+.commitment-card p {
+  font-size: 12.2px;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .services-grid-3x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .approach-steps-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .commitment-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid-3x2 {
+    grid-template-columns: 1fr;
+  }
+  .approach-steps-4 {
+    grid-template-columns: 1fr;
+  }
+  .commitment-grid-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .commitment-grid-5 {
+    grid-template-columns: 1fr;
+  }
+}

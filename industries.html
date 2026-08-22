@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#031a3a" />
+    <meta name="description" content="Industrial automation solutions across diverse industries including Automotive, Chemical, Pharmaceuticals, Food &amp; Beverage, Power, Water, Cement and Steel." />
+    <title>Industries We Serve | Infinity Power India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="industries.css" />
+    <link rel="stylesheet" href="inquiry.css" />
+  <link rel="stylesheet" href="animations.css" />
+<style id="indmach-cards-style">
+  /* Industry-wise Machines: each machine rendered as an image-style card */
+  .indmach-list, #industry-machines .indmach-list {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+    gap: 16px;
+  }
+  .indmach-list li, #industry-machines .indmach-list li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 26px 14px 20px;
+    background: #fff;
+    border: 1px solid #e8ebf1;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 14.5px;
+    font-weight: 600;
+    line-height: 1.45;
+    color: #16233b;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, .04);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    cursor: pointer;
+  }
+  .indmach-list li::before, #industry-machines .indmach-list li::before {
+    content: "";
+    position: static !important;
+    inset: auto !important;
+    transform: none !important;
+    margin: 0 !important;
+    float: none !important;
+    flex: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fdecec;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e52327' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3Cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    transition: background-color .25s ease, background-image .25s ease;
+  }
+  .indmach-list li:hover, #industry-machines .indmach-list li:hover {
+    transform: translateY(-4px);
+    border-color: #e52327;
+    box-shadow: 0 14px 30px rgba(229, 35, 39, .13);
+  }
+  .indmach-list li:hover::before, #industry-machines .indmach-list li:hover::before {
+    background-color: #e52327;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3Cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3E%3C/svg%3E");
+  }
+  .indmach-list li.is-selected, #industry-machines .indmach-list li.is-selected {
+    border-color: #e52327;
+    box-shadow: 0 10px 26px rgba(229, 35, 39, .16);
+  }
+  .indmach-list li:focus-visible, #industry-machines .indmach-list li:focus-visible {
+    outline: 2px solid #e52327;
+    outline-offset: 2px;
+  }
+  .indmach-media img {
+    transition: opacity .28s ease;
+  }
+  @media (max-width: 640px) {
+    .indmach-list, #industry-machines .indmach-list {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 12px;
+    }
+  }
+</style>
+</head>
+  <body>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="contact-mini">
+          <a href="tel:+919978973722">☎ +91 99789 73722</a>
+          <a href="mailto:infinitypowerindia@gmail.com">✉ infinitypowerindia@gmail.com</a>
+          <span>⌖ Ahmedabad, Gujarat</span>
+        </div>
+        <div class="social-mini" aria-label="Social links">
+          <a href="#footer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#footer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#footer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#footer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.45A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.97C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#021430"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SITE HEADER -->
+    <header class="site-header" id="home">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="Infinity Power India home">
+          <img src="logo.png" alt="Infinity Power India Logo" class="site-logo-img" />
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span><span class="sr-only">Menu</span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="services.html">Services</a>
+          <a class="active" href="industries.html">Industries</a>
+          <a href="projects.html">Projects</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="downloads.html">Downloads</a>
+          <a href="blog.html">Blog</a>
+          <a href="career.html">Careers</a>
+          <a href="contact.html">Contact Us</a>
+          <a class="btn btn--small" href="contact.html">Get an Inquiry</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO BANNER -->
+      <section class="ind-hero">
+        <div class="container">
+          <span class="ind-hero-badge">INDUSTRIES</span>
+          <h1>Industries We Serve</h1>
+          <p>Delivering intelligent automation solutions across diverse industries to drive efficiency, reliability and sustainable growth.</p>
+          <div class="ind-breadcrumbs">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <span>Industries</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 1: SMART AUTOMATION FOR EVERY INDUSTRY (8 CARDS) -->
+      <section class="ind-power-section">
+        <div class="container">
+          <div class="section-center-head">
+            <span class="red-eyebrow-accent">INDUSTRIES WE POWER</span>
+            <h2>Smart Automation for Every Industry</h2>
+            <p>Our solutions are designed to meet the unique challenges of each industry, helping businesses improve productivity, ensure safety and stay future-ready.</p>
+          </div>
+
+          <div class="ind-cards-grid-4x2">
+            <!-- 1. Automotive -->
+            <div class="ind-full-card">
+              <div class="ind-card-img-wrap">
+                <img src="assets/ind-automotive.png" alt="Automotive Industry Automation" />
+                <div class="ind-badge-squircle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H7c-.7 0-1.3.3-1.8.7C4.3 8.6 3 10 3 10s-2.7.6-4.5 1.1C.7 11.3 0 12.1 0 13v3c0 .6.4 1 1 1h2"/>
+                    <circle cx="7" cy="17" r="2"/>
+                    <path d="M9 17h6"/>
+                    <circle cx="17" cy="17" r="2"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ind-card-body">
+                <h3>Automotive</h3>
+                <p>Advanced automation solutions for automotive manufacturing, assembly lines, robotics integration and process optimization.</p>
+                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- 2. Chemical & Petrochemical -->
+            <div class="ind-full-card">
+              <div class="ind-card-img-wrap">
+                <img src="assets/ind-chemical.png" alt="Chemical &amp; Petrochemical Automation" />
+                <div class="ind-badge-squircle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 2v7.5L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 9.5V2"/>
+                    <path d="M8.5 2h7"/>
+                    <path d="M7 16h10"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ind-card-body">
+                <h3>Chemical &amp; Petrochemical</h3>
+                <p>Reliable and safe automation systems for process control, monitoring, and handling complex chemical manufacturing operations.</p>
+                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- 3. Pharmaceuticals -->
+            <div class="ind-full-card">
+              <div class="ind-card-img-wrap">
+                <img src="assets/ind-pharma.png" alt="Pharmaceutical Automation" />
+                <div class="ind-badge-squircle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/>
+                    <path d="m8.5 8.5 7 7"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ind-card-body">
+                <h3>Pharmaceuticals</h3>
+                <p>Precision automation for pharmaceutical manufacturing, packaging, validation and compliance with global standards.</p>
+                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- 4. Food & Beverage -->
+            <div class="ind-full-card">
+              <div class="ind-card-img-wrap">
+                <img src="assets/ind-food.png" alt="Food &amp; Beverage Automation" />
+                <div class="ind-badge-squircle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2h12v3H6z"/>
+                    <path d="M6 5v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5"/>
+                    <line x1="10" y1="9" x2="14" y2="9"/>
+                    <line x1="10" y1="13" x2="14" y2="13"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ind-card-body">
+                <h3>Food &amp; Beverage</h3>
+                <p>End-to-end automation for food processing, packaging, quality control and hygiene management systems.</p>
+                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- 5. Power & Energy -->
+            <div class="ind-full-card">
+              <div class="ind-card-img-wrap">
+                <img src="assets/ind-power.png" alt="Power &amp; Energy Automation" />
+                <div class="ind-badge-squircle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ind-card-body">
+                <h3>Power &amp; Energy</h3>
+                <p>Smart solutions for power generation, distribution, energy management and renewable energy integration.</p>
+                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- 6. Water & Wastewater -->
+            <div class="ind-full-card">
+              <div class="ind-card-img-wrap">
+                <img src="assets/ind-water.png" alt="Water &amp; Wastewater Automation" />
+                <div class="ind-badge-squircle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ind-card-body">
+                <h3>Water &amp; Wastewater</h3>
+                <p>Automation for water treatment plants, wastewater management, pump stations and process monitoring.</p>
+                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- 7. Cement -->
+            <div class="ind-full-card">
+              <div class="ind-card-img-wrap">
+                <img src="assets/ind-cement.png" alt="Cement Industry Automation" />
+                <div class="ind-badge-squircle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4H2v16z"/>
+                    <path d="M17 18h1"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ind-card-body">
+                <h3>Cement</h3>
+                <p>Optimized automation for kiln control, process monitoring, material handling and plant performance.</p>
+                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- 8. Steel & Metals -->
+            <div class="ind-full-card">
+              <div class="ind-card-img-wrap">
+                <img src="assets/ind-steel.png" alt="Steel &amp; Metals Automation" />
+                <div class="ind-badge-squircle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2"/>
+                    <path d="M6 7V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3"/>
+                    <line x1="12" y1="12" x2="12" y2="16"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ind-card-body">
+                <h3>Steel &amp; Metals</h3>
+                <p>Robust automation for material handling, furnace control, quality assurance and production optimization.</p>
+                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 1B: INDUSTRY-WISE MACHINE SOLUTIONS (TABS) -->
+      <section class="ind-machines-section" id="industry-machines">
+        <div class="container">
+          <div class="section-center-head">
+            <span class="red-eyebrow-accent">INDUSTRY-WISE SOLUTIONS</span>
+            <h2>Machines We Automate</h2>
+            <p>Explore the complete range of machines, plants and panels we automate across Textile, Steel, Paper & Packaging, Plastic & Polymer, Wooden and Food & Beverage industries.</p>
+          </div>
+
+          <div class="indmach-tabs" role="tablist" aria-label="Industry machine categories">
+            <button type="button" class="indmach-tab is-active" role="tab" aria-selected="true" aria-controls="indmach-textile" data-target="indmach-textile">Textile</button>
+            <button type="button" class="indmach-tab" role="tab" aria-selected="false" aria-controls="indmach-steel" data-target="indmach-steel">Steel</button>
+            <button type="button" class="indmach-tab" role="tab" aria-selected="false" aria-controls="indmach-paper" data-target="indmach-paper">Paper & Packaging</button>
+            <button type="button" class="indmach-tab" role="tab" aria-selected="false" aria-controls="indmach-plastic" data-target="indmach-plastic">Plastic & Polymer</button>
+            <button type="button" class="indmach-tab" role="tab" aria-selected="false" aria-controls="indmach-wooden" data-target="indmach-wooden">Wooden</button>
+            <button type="button" class="indmach-tab" role="tab" aria-selected="false" aria-controls="indmach-food" data-target="indmach-food">Food & Beverages</button>
+          </div>
+
+          <!-- TEXTILE -->
+          <div class="indmach-panel is-active" id="indmach-textile" role="tabpanel">
+            <div class="indmach-panel-grid">
+              <div class="indmach-media">
+                <img src="Rikin%20(1)/Rikin/Mahlo-Revised.webp" alt="Textile stenter machine automation" loading="lazy" />
+                <span class="indmach-count">13+ Machines Automated</span>
+              </div>
+              <div class="indmach-list-wrap">
+                <h3>Textile Industry Automation</h3>
+                <p>From spinning and weaving to printing, dyeing and finishing — our drives, panels and control systems keep every stage of your textile plant running with precision.</p>
+                <ul class="indmach-list">
+                  <li>Mercerizing Machine</li>
+                  <li>Stenter Machine</li>
+                  <li>Straightening Machine</li>
+                  <li>Folding Machine</li>
+                  <li>Warping Machine</li>
+                  <li>Loom Machine</li>
+                  <li>Flatbed Printing Machine</li>
+                  <li>Digital Printing Machine</li>
+                  <li>Ring Frame Machine</li>
+                  <li>Winding & Rewinding Machine</li>
+                  <li>Embroidery Machine</li>
+                  <li>Auto Head Machine</li>
+                  <li>Boiler Plant Panel</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEEL -->
+          <div class="indmach-panel" id="indmach-steel" role="tabpanel">
+            <div class="indmach-panel-grid">
+              <div class="indmach-media">
+                <img src="Rikin%20(1)/Rikin/hot%20milling.jpg" alt="Steel rolling mill automation" loading="lazy" />
+                <span class="indmach-count">15+ Machines Automated</span>
+              </div>
+              <div class="indmach-list-wrap">
+                <h3>Steel Industry Automation</h3>
+                <p>High-performance automation for rolling mills, coilers, straighteners and CNC machinery — engineered to withstand the most demanding steel plant environments.</p>
+                <ul class="indmach-list">
+                  <li>TMT Hot Rolling Mill</li>
+                  <li>Main Mill</li>
+                  <li>Stand Mill</li>
+                  <li>Cold Mill</li>
+                  <li>Sheet Coiler & Decoiler Machine</li>
+                  <li>Metal Sheet Straightening Machine</li>
+                  <li>TMT Plant Automation</li>
+                  <li>Pinch Roll in a Rolling Mill</li>
+                  <li>Cut-To-Length Machine</li>
+                  <li>Sheet Metal Punching Machine</li>
+                  <li>NC Back Gauge Machine</li>
+                  <li>SPM Automation System</li>
+                  <li>All Types of CNC Customization System</li>
+                  <li>Turret Punching Machine</li>
+                  <li>Laser Cutting Machine</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAPER & PACKAGING -->
+          <div class="indmach-panel" id="indmach-paper" role="tabpanel">
+            <div class="indmach-panel-grid">
+              <div class="indmach-media">
+                <img src="Rikin%20(1)/Rikin/paper%20mill%20plant%20automation.jpg" alt="Paper mill plant automation" loading="lazy" />
+                <span class="indmach-count">10+ Machines Automated</span>
+              </div>
+              <div class="indmach-list-wrap">
+                <h3>Paper & Packaging Industry Automation</h3>
+                <p>Sectional drives, rewinders and complete plant automation that maximize line speed and minimize downtime across paper mills and packaging units.</p>
+                <ul class="indmach-list">
+                  <li>Sectional Machine</li>
+                  <li>Line Shaft</li>
+                  <li>Sectional Drive Machine Panel System</li>
+                  <li>Twin Drum Rewinder Machine</li>
+                  <li>Simple Rewinder Machine</li>
+                  <li>Paper Cutting Machine</li>
+                  <li>Core Pipe Machine</li>
+                  <li>Paper Mill Plant Automation</li>
+                  <li>Corrugated Box Plant Machinery</li>
+                  <li>All Types of Automated Packaging Machines</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLASTIC & POLYMER -->
+          <div class="indmach-panel" id="indmach-plastic" role="tabpanel">
+            <div class="indmach-panel-grid">
+              <div class="indmach-media">
+                <img src="Rikin%20(1)/Rikin/screw-extruder-machine.webp" alt="Plastic extruder machine automation" loading="lazy" />
+                <span class="indmach-count">17+ Machines Automated</span>
+              </div>
+              <div class="indmach-list-wrap">
+                <h3>Plastic & Polymer Industry Automation</h3>
+                <p>Extrusion, moulding, laminating, winding and converting lines automated for consistent quality, higher output and energy-efficient operation.</p>
+                <ul class="indmach-list">
+                  <li>Plastic Extruder Machines</li>
+                  <li>Lamination Plant</li>
+                  <li>Tape Plant Cheese Winder Application</li>
+                  <li>PVC Pipe Plant</li>
+                  <li>Bag Cutting & Sewing Machine</li>
+                  <li>Blow Moulding Machine</li>
+                  <li>Injection Moulding Machine</li>
+                  <li>Plastic Film Machine Automation</li>
+                  <li>Rotogravure Printing Machine</li>
+                  <li>Slitter Rewinder Machine</li>
+                  <li>Plastic Lamination Machine Automation</li>
+                  <li>Pouch Packing Machine</li>
+                  <li>SPM Packing Machine Automation</li>
+                  <li>Lamination Coating Plant</li>
+                  <li>Winder & Unwinder Panel Systems</li>
+                  <li>Trim Winder Machine</li>
+                  <li>Irrigation Pipe Plant</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- WOODEN -->
+          <div class="indmach-panel" id="indmach-wooden" role="tabpanel">
+            <div class="indmach-panel-grid">
+              <div class="indmach-media">
+                <img src="Rikin%20(1)/Rikin/cnc%20router.avif" alt="CNC router wood cutting automation" loading="lazy" />
+                <span class="indmach-count">8+ Machines Automated</span>
+              </div>
+              <div class="indmach-list-wrap">
+                <h3>Wooden Industry Automation</h3>
+                <p>Customized automation for board plants, laminate lines, CNC routers and every type of wooden machine with tailor-made control systems.</p>
+                <ul class="indmach-list">
+                  <li>Forming Board Plant Automation</li>
+                  <li>Lamination Board Plant</li>
+                  <li>CNC Router Machine</li>
+                  <li>Sunmica Laminates Plant</li>
+                  <li>Wood Sheet Cutting Machine</li>
+                  <li>Finger Joint Machine</li>
+                  <li>SPM Wood Cutting Machine Automation</li>
+                  <li>All Type of Wooden Machine with Customize Automation System</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOD & BEVERAGES -->
+          <div class="indmach-panel" id="indmach-food" role="tabpanel">
+            <div class="indmach-panel-grid">
+              <div class="indmach-media">
+                <img src="Rikin%20(1)/Rikin/Fully-Automatic-Pouch-Packing-Machine.jpg" alt="Food pouch packing machine automation" loading="lazy" />
+                <span class="indmach-count">7+ Machines Automated</span>
+              </div>
+              <div class="indmach-list-wrap">
+                <h3>Food & Beverages Industry Automation</h3>
+                <p>Hygienic, reliable control systems for dairy processing, product making, packing and cold storage operations in food and beverage plants.</p>
+                <ul class="indmach-list">
+                  <li>Dairy Machinery</li>
+                  <li>Butter Making Machine</li>
+                  <li>Paneer Plant Automation</li>
+                  <li>Powder Making Plant</li>
+                  <li>Milk Packing</li>
+                  <li>Cold Storage Controlling System</li>
+                  <li>Bottle Filling Machine</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: WHY INDUSTRIES TRUST US -->
+      <section class="ind-trust-section">
+        <div class="container">
+          <div class="section-center-head">
+            <span class="red-eyebrow-text">WHY INDUSTRIES TRUST US</span>
+            <h2>Built for Performance. Designed for Impact.</h2>
+          </div>
+
+          <div class="trust-row-5">
+            <!-- 1 -->
+            <div class="trust-col-item">
+              <div class="trust-head-inline">
+                <div class="trust-circle-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
+                  </svg>
+                </div>
+                <h3>Industry-Specific<br />Expertise</h3>
+              </div>
+              <p>Deep understanding of industry processes and challenges.</p>
+            </div>
+
+            <!-- 2 -->
+            <div class="trust-col-item">
+              <div class="trust-head-inline">
+                <div class="trust-circle-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <h3>Reliable &amp; Scalable<br />Solutions</h3>
+              </div>
+              <p>Systems designed for continuous performance and future growth.</p>
+            </div>
+
+            <!-- 3 -->
+            <div class="trust-col-item">
+              <div class="trust-head-inline">
+                <div class="trust-circle-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="12" width="4" height="9" rx="1"/>
+                    <rect x="10" y="8" width="4" height="13" rx="1"/>
+                    <rect x="17" y="3" width="4" height="18" rx="1"/>
+                  </svg>
+                </div>
+                <h3>Improved Efficiency<br />&amp; Productivity</h3>
+              </div>
+              <p>Optimized operations that reduce downtime and increase output.</p>
+            </div>
+
+            <!-- 4 -->
+            <div class="trust-col-item">
+              <div class="trust-head-inline">
+                <div class="trust-circle-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <h3>Safety &amp; Compliance<br />Focus</h3>
+              </div>
+              <p>Solutions that ensure workplace safety and regulatory compliance.</p>
+            </div>
+
+            <!-- 5 -->
+            <div class="trust-col-item">
+              <div class="trust-head-inline">
+                <div class="trust-circle-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+                  </svg>
+                </div>
+                <h3>End-to-End<br />Support</h3>
+              </div>
+              <p>From consultation to after-sales, we're with you every step.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: OUR EXPERIENCE IN NUMBERS (DARK NAVY CONTAINER) -->
+      <section class="ind-stats-section">
+        <div class="container">
+          <div class="section-center-head">
+            <span class="red-eyebrow-text">OUR EXPERIENCE IN NUMBERS</span>
+          </div>
+
+          <div class="ind-stats-banner">
+            <div class="ind-stat-item">
+              <div class="ind-stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="ind-stat-number">15+</div>
+              <div class="ind-stat-label">Years of Experience</div>
+            </div>
+
+            <div class="ind-stat-item">
+              <div class="ind-stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+              </div>
+              <div class="ind-stat-number">500+</div>
+              <div class="ind-stat-label">Projects Completed</div>
+            </div>
+
+            <div class="ind-stat-item">
+              <div class="ind-stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 11l-3 3-2-2"/>
+                </svg>
+              </div>
+              <div class="ind-stat-number">250+</div>
+              <div class="ind-stat-label">Happy Clients</div>
+            </div>
+
+            <div class="ind-stat-item">
+              <div class="ind-stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+              <div class="ind-stat-number">20+</div>
+              <div class="ind-stat-label">Industries Served</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="prod-cta-banner">
+        <div class="container">
+          <h2>Let's Automate Your Industry</h2>
+          <p>Partner with Infinity Power India for intelligent automation solutions that drive performance and value.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="cta-btn-primary">Send an Inquiry <span>→</span></a>
+            <a href="https://wa.me/919978973722" target="_blank" rel="noopener" class="cta-btn-whatsapp">
+              Chat on WhatsApp
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" id="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand brand--footer" href="index.html" aria-label="Infinity Power India home">
+            <img src="logo.png" alt="Infinity Power India Logo" class="site-logo-img" />
+          </a>
+          <p>Powering Industrial Automation<br />with Innovation.</p>
+          <div class="footer-social">
+            <a href="index.html#footer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="index.html#footer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="index.html#footer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="index.html#footer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.45A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.97C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#021430"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Company</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Our Services</a>
+          <a href="products.html">Product Portfolio</a>
+          <a href="blog.html">Blog &amp; FAQs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div>
+          <h3>Products</h3>
+          <a href="products.html">PLC Systems</a>
+          <a href="products.html">HMI Touch Panels</a>
+          <a href="products.html">VFD / AC Drives</a>
+          <a href="products.html">Control Panels</a>
+          <a href="products.html">Servo Drives</a>
+        </div>
+
+        <div>
+          <h3>Services</h3>
+          <a href="services.html">Consulting &amp; Engineering</a>
+          <a href="services.html">System Design</a>
+          <a href="services.html">Panel Building</a>
+          <a href="services.html">Installation &amp; Commissioning</a>
+          <a href="services.html">Maintenance &amp; Support</a>
+        </div>
+
+        <div>
+          <h3>Industries</h3>
+          <a href="industries.html">Automotive</a>
+          <a href="industries.html">Pharmaceuticals</a>
+          <a href="industries.html">Food &amp; Beverage</a>
+          <a href="industries.html">Water Treatment</a>
+          <a href="industries.html">Manufacturing</a>
+        </div>
+
+        <div>
+          <h3>Resources</h3>
+          <a href="index.html#footer">Download Brochure</a>
+          <a href="index.html#projects">Case Studies</a>
+          <a href="index.html#gallery">Photo Gallery</a>
+          <a href="index.html#faq">Knowledge Base</a>
+        </div>
+
+        <address class="footer-contact-col">
+          <h3 class="contact-title">Contact Us</h3>
+          <p>📍 30, Gopal Charan Estate, Near Ajit Katha, Behind Sai Palace Hotel, Odhav, Ahmedabad - 382415, Gujarat</p>
+          <a href="tel:+919978973722">☎ +91 99789 73722</a>
+          <a href="mailto:infinitypowerindia@gmail.com">✉ infinitypowerindia@gmail.com</a>
+          <a href="index.html">🌐 www.infinitypower-india.com</a>
+        </address>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container copyright-inner">
+          <span>&copy; 2026 Infinity Power India. All Rights Reserved.</span>
+          <span><a href="index.html#footer">Privacy Policy</a> <i>|</i> <a href="index.html#footer">Terms &amp; Conditions</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  <script src="inquiry.js"></script>
+  <script src="animations.js"></script>
+  <script>
+    // Industry-wise machines tab switcher
+    (function () {
+      var tabs = document.querySelectorAll('.indmach-tab');
+      var panels = document.querySelectorAll('.indmach-panel');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          tabs.forEach(function (t) {
+            t.classList.remove('is-active');
+            t.setAttribute('aria-selected', 'false');
+          });
+          panels.forEach(function (p) { p.classList.remove('is-active'); });
+          tab.classList.add('is-active');
+          tab.setAttribute('aria-selected', 'true');
+          var target = document.getElementById(tab.getAttribute('data-target'));
+          if (target) target.classList.add('is-active');
+        });
+      });
+    })();
+
+    // Machine card click -> swap side panel image
+    (function () {
+      var MACHINE_IMAGES = {
+        /* Textile */
+        "Mercerizing Machine": "10000m-hr-fabric-mercerizing-machine.jpg",
+        "Stenter Machine": "Stenter-Machines.webp",
+        "Folding Machine": "Suntech-Fabric-Folding-Machine-with-Digital-Counter-Meter.avif",
+        "Warping Machine": "1-EK000459-3.000-mm-benninger-sectional-warper-textile-plant-used-machine-eko-gruppo.jpg",
+        "Loom Machine": "looms plstic machine.avif",
+        "Straightening Machine": "sheet-metal-straightener.jpg",
+        "Flatbed Printing Machine": "digital textile.webp",
+        "Digital Printing Machine": "digital textile.webp",
+        "Ring Frame Machine": "ring frame.jpeg",
+        "Winding & Rewinding Machine": "winding and rewinding.avif",
+        "Embroidery Machine": "embroidery.webp",
+        "Auto Head Machine": "auto head.webp",
+        "Boiler Plant Panel": "steam boiler.webp",
+        /* Steel */
+        "TMT Hot Rolling Mill": "hot milling.jpg",
+        "Main Mill": "hot milling.jpg",
+        "Stand Mill": "hot milling.jpg",
+        "Cold Mill": "hot milling.jpg",
+        "Sheet Coiler & Decoiler Machine": "single-side-hydraulic-decoiler1.jpg",
+        "Metal Sheet Straightening Machine": "sheet-metal-straightener.jpg",
+        "TMT Plant Automation": "hot milling.jpg",
+        "Pinch Roll in a Rolling Mill": "hot milling.jpg",
+        "Cut-To-Length Machine": "Metal-Cut-to-Length-Machine-700x393.webp",
+        "Sheet Metal Punching Machine": "punching.webp",
+        "NC Back Gauge Machine": "press back gauge.jpg",
+        "SPM Automation System": "sectional drive panel system.jpg",
+        "All Types of CNC Customization System": "ASGCO-CNC-Laser-Cutting.jpg",
+        "Turret Punching Machine": "turret-punching.jpg",
+        "Laser Cutting Machine": "ASGCO-CNC-Laser-Cutting.jpg",
+        /* Paper & Packaging */
+        "Sectional Machine": "sectional drive panel system.jpg",
+        "Line Shaft": "kine shaft.jpg",
+        "Sectional Drive Machine Panel System": "sectional drive panel system.jpg",
+        "Twin Drum Rewinder Machine": "twine drum rewind.jpg",
+        "Simple Rewinder Machine": "simple rewinder.jpg",
+        "Paper Cutting Machine": "paper cutting.avif",
+        "Core Pipe Machine": "core pipe machine.webp",
+        "Paper Mill Plant Automation": "paper mill plant automation.jpg",
+        "Corrugated Box Plant Machinery": "corrugated plant.jpg",
+        "All Types of Automated Packaging Machines": "Fully-Automatic-Pouch-Packing-Machine.jpg",
+        /* Plastic & Polymer */
+        "Plastic Extruder Machines": "screw-extruder-machine.webp",
+        "Lamination Plant": "lamination plant.jpg",
+        "Tape Plant Cheese Winder Application": "tape plant and cheese winder.jpg",
+        "PVC Pipe Plant": "pvc pipe plant.jpg",
+        "Bag Cutting & Sewing Machine": "bag cutting sweing machine.webp",
+        "Blow Moulding Machine": "blow moulding.png",
+        "Injection Moulding Machine": "injection mould.webp",
+        "Plastic Film Machine Automation": "blown film.jpg",
+        "Rotogravure Printing Machine": "rotogravure.webp",
+        "Slitter Rewinder Machine": "slitting-rewinding-machines-500x500.webp",
+        "Plastic Lamination Machine Automation": "lamination plant.jpg",
+        "Pouch Packing Machine": "Fully-Automatic-Pouch-Packing-Machine.jpg",
+        "SPM Packing Machine Automation": "spm packging machine.jpg",
+        "Lamination Coating Plant": "lamination plant.jpg",
+        "Winder & Unwinder Panel Systems": "winder-rewinder-machine plastic.webp",
+        "Trim Winder Machine": "trim winder.webp",
+        "Irrigation Pipe Plant": "pvc pipe plant.jpg",
+        /* Wooden */
+        "Forming Board Plant Automation": "particleboard plant.jpg",
+        "Lamination Board Plant": "Sunmica-Lamination-Machine.avif",
+        "CNC Router Machine": "cnc router.avif",
+        "Sunmica Laminates Plant": "Sunmica-Lamination-Machine.avif",
+        "Wood Sheet Cutting Machine": "wood sheet cutting.webp",
+        "Finger Joint Machine": "finger joint.webp",
+        "SPM Wood Cutting Machine Automation": "wood sheet cutting.webp",
+        "All Type of Wooden Machine with Customize Automation System": "particleboard plant.jpg",
+        /* Food & Beverages */
+        "Dairy Machinery": "steam boiler.webp",
+        "Butter Making Machine": "whatsapp-image-2026-02-18-at-1-22-14-pm-500x500.webp",
+        "Paneer Plant Automation": "steam boiler.webp",
+        "Powder Making Plant": "whatsapp-image-2026-02-18-at-1-22-14-pm-500x500.webp",
+        "Milk Packing": "spm packging machine.jpg",
+        "Cold Storage Controlling System": "sectional drive panel system.jpg",
+        "Bottle Filling Machine": "whatsapp-image-2026-02-18-at-1-22-14-pm-500x500.webp"
+      };
+
+      document.querySelectorAll('.indmach-panel').forEach(function (panel) {
+        var mediaImg = panel.querySelector('.indmach-media img');
+        if (!mediaImg) return;
+        mediaImg.dataset.defaultSrc = mediaImg.getAttribute('src');
+
+        var cards = Array.prototype.slice.call(panel.querySelectorAll('.indmach-list li'));
+        cards.forEach(function (card) {
+          card.setAttribute('tabindex', '0');
+          card.setAttribute('role', 'button');
+
+          var label = (card.textContent || '').replace(/\s+/g, ' ').trim();
+          var file = MACHINE_IMAGES[label];
+
+          function activate() {
+            cards.forEach(function (c) { c.classList.remove('is-selected'); });
+            card.classList.add('is-selected');
+            var next = file ? encodeURI('Rikin (1)/Rikin/' + file) : mediaImg.dataset.defaultSrc;
+            if (mediaImg.getAttribute('src') === next) return;
+            mediaImg.style.opacity = '0';
+            window.setTimeout(function () {
+              mediaImg.setAttribute('src', next);
+              mediaImg.setAttribute('alt', label);
+              mediaImg.style.opacity = '1';
+            }, 180);
+          }
+
+          card.addEventListener('click', activate);
+          card.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              activate();
+            }
+          });
+        });
+      });
+    })();
+  </script>
+  </body>
+</html>

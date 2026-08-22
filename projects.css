@@ -1,0 +1,560 @@
+/* ─────────────────────────────────────────────────────────────
+   PROJECTS PAGE SPECIFIC STYLES
+   Matching project page.png reference layout exactly
+───────────────────────────────────────────────────────────── */
+
+/* Hero Banner */
+.proj-hero {
+  position: relative;
+  background: #031833 url('assets/hero-banner-reference.png') center center / cover no-repeat;
+  color: #ffffff;
+  padding: 85px 0 90px;
+  overflow: hidden;
+}
+
+.proj-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(3, 24, 51, 0.92) 0%, rgba(3, 24, 51, 0.82) 50%, rgba(3, 24, 51, 0.65) 100%);
+}
+
+.proj-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.proj-hero-badge {
+  display: inline-block;
+  background: rgba(229, 35, 39, 0.15);
+  border: 1px solid rgba(229, 35, 39, 0.4);
+  color: #ff4d4f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.proj-hero h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(38px, 4.5vw, 54px);
+  font-weight: 800;
+  margin: 0 0 14px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.proj-hero p {
+  max-width: 580px;
+  font-size: 15px;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.proj-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.proj-breadcrumbs a {
+  color: #e5e7eb;
+  transition: color 0.2s;
+}
+
+.proj-breadcrumbs a:hover {
+  color: #3b82f6;
+}
+
+.proj-breadcrumbs span {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* Eyebrow Accent */
+.red-eyebrow-text {
+  color: #e52327;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-center-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 40px;
+}
+
+.section-center-head h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 800;
+  color: #081936;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+  line-height: 1.18;
+}
+
+.section-center-head p {
+  color: #64748b;
+  font-size: 14.5px;
+  margin: 0;
+  line-height: 1.65;
+}
+
+/* Section 1: Our Success Stories Grid */
+.proj-grid-section {
+  padding: 85px 0;
+  background: #ffffff;
+}
+
+.proj-filter-pills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.filter-pill {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-pill:hover {
+  border-color: #03142e;
+  color: #03142e;
+}
+
+.filter-pill.active {
+  background: #03142e;
+  border-color: #03142e;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(3, 20, 46, 0.25);
+}
+
+.projects-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.proj-card {
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(3, 24, 51, 0.1);
+  border-color: #cbd5e1;
+}
+
+.proj-card-img-wrap {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.proj-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  transition: transform 0.4s ease;
+}
+
+.proj-card:hover .proj-card-img-wrap img {
+  transform: scale(1.06);
+}
+
+.proj-card-body {
+  padding: 24px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.proj-cat-badge {
+  display: inline-block;
+  color: #e52327;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.proj-card-body h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #081936;
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+
+.proj-card-body p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  flex-grow: 1;
+}
+
+.proj-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12.5px;
+  color: #94a3b8;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.proj-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #e52327;
+  text-decoration: none;
+  transition: gap 0.2s ease, color 0.2s ease;
+  margin-top: auto;
+}
+
+.proj-link:hover {
+  color: #c91e24;
+  gap: 10px;
+}
+
+/* Section 2: Dark Navy Stats Banner Box */
+.proj-stats-section {
+  padding: 20px 0 85px;
+  background: #ffffff;
+}
+
+.proj-stats-banner {
+  background: #03142e;
+  border-radius: 14px;
+  padding: 36px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(3, 20, 46, 0.2);
+}
+
+.proj-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 24px;
+}
+
+.proj-stat-item:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.proj-stat-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj-stat-icon svg {
+  width: 36px;
+  height: 36px;
+  stroke: #ffffff;
+}
+
+.proj-stat-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.proj-stat-lbl {
+  font-size: 13px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+/* Section 3: Delivering Impact Split Grid */
+.proj-impact-section {
+  padding: 70px 0 85px;
+  background: #ffffff;
+  border-top: 1px solid #f1f5f9;
+}
+
+.impact-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 52px;
+  align-items: center;
+}
+
+.impact-left-content h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 800;
+  color: #081936;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.impact-desc {
+  font-size: 14.5px;
+  color: #64748b;
+  margin: 0 0 28px;
+  line-height: 1.6;
+}
+
+.impact-check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.impact-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.check-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(229, 35, 39, 0.12);
+  color: #e52327;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.btn-discuss-project {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #03142e;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-discuss-project:hover {
+  background: #08224d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(3, 20, 46, 0.3);
+}
+
+.impact-img-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 400px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.impact-img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.impact-float-card {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 20px 22px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.float-card-icon {
+  width: 44px;
+  height: 44px;
+  background: #e52327;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.float-card-text h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #081936;
+  margin: 0 0 4px;
+}
+
+.float-card-text p {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Section 4: Our Approach 5 Steps */
+.proj-approach-section {
+  padding: 85px 0;
+  background: #f8fafc;
+  border-top: 1px solid #f1f5f9;
+}
+
+.process-steps-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.step-card {
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 14px;
+  padding: 32px 18px 26px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.025);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(3, 24, 51, 0.08);
+}
+
+.step-badge-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.step-badge-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: #2563eb;
+}
+
+.step-num-lbl {
+  font-size: 11px;
+  font-weight: 800;
+  color: #2563eb;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.step-card h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0b1f3a;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+
+.step-card p {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1180px) {
+  .projects-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .proj-stats-banner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .proj-stat-item:not(:last-child) {
+    border-right: none;
+  }
+  .impact-split-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-steps-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .proj-stats-banner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .process-steps-5 {
+    grid-template-columns: 1fr;
+  }
+}

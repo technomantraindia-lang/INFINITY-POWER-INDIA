@@ -1,0 +1,611 @@
+/* ─────────────────────────────────────────────────────────────
+   INDUSTRIES PAGE SPECIFIC STYLES
+   Matching Industries page.png reference layout exactly
+───────────────────────────────────────────────────────────── */
+
+/* Hero Banner */
+.ind-hero {
+  position: relative;
+  background: #031833 url('assets/hero-banner-reference.png') center center / cover no-repeat;
+  color: #ffffff;
+  padding: 85px 0 90px;
+  overflow: hidden;
+}
+
+.ind-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(3, 24, 51, 0.92) 0%, rgba(3, 24, 51, 0.82) 50%, rgba(3, 24, 51, 0.65) 100%);
+}
+
+.ind-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.ind-hero-badge {
+  display: inline-block;
+  background: rgba(229, 35, 39, 0.15);
+  border: 1px solid rgba(229, 35, 39, 0.4);
+  color: #ff4d4f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.ind-hero h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(38px, 4.5vw, 54px);
+  font-weight: 800;
+  margin: 0 0 14px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.ind-hero p {
+  max-width: 580px;
+  font-size: 15px;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.ind-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.ind-breadcrumbs a {
+  color: #e5e7eb;
+  transition: color 0.2s;
+}
+
+.ind-breadcrumbs a:hover {
+  color: #3b82f6;
+}
+
+.ind-breadcrumbs span {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* Eyebrow with horizontal accent lines */
+.red-eyebrow-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #e52327;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.red-eyebrow-accent::before,
+.red-eyebrow-accent::after {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 1.5px;
+  background: #e52327;
+  opacity: 0.7;
+}
+
+/* Section Common Header */
+.section-center-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 48px;
+}
+
+.section-center-head h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 800;
+  color: #081936;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+  line-height: 1.18;
+}
+
+.section-center-head p {
+  color: #64748b;
+  font-size: 14.5px;
+  margin: 0;
+  line-height: 1.65;
+}
+
+.section-center-head--dark h2 {
+  color: #ffffff;
+}
+
+/* Section 1: Industries We Power (8 Cards) */
+.ind-power-section {
+  padding: 85px 0;
+  background: #ffffff;
+}
+
+.ind-cards-grid-4x2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.ind-full-card {
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.ind-full-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(3, 24, 51, 0.1);
+  border-color: #3b82f6;
+}
+
+.ind-card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.ind-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+  transition: transform 0.4s ease;
+}
+
+.ind-full-card:hover .ind-card-img-wrap img {
+  transform: scale(1.06);
+}
+
+.ind-badge-squircle {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 44px;
+  height: 44px;
+  background: #1d4ed8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.35);
+  z-index: 2;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.ind-full-card:hover .ind-badge-squircle {
+  transform: scale(1.08);
+  background: #2563eb;
+}
+
+.ind-card-body {
+  padding: 24px 20px 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.ind-card-body h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #081936;
+  margin: 0 0 10px;
+  line-height: 1.25;
+}
+
+.ind-card-body p {
+  font-size: 13px;
+  color: #556070;
+  line-height: 1.6;
+  margin: 0 0 18px;
+  flex-grow: 1;
+}
+
+.ind-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2563eb;
+  transition: color 0.2s ease, gap 0.2s ease;
+  margin-top: auto;
+}
+
+.ind-card-link:hover {
+  color: #1d4ed8;
+  gap: 10px;
+}
+
+/* Section 2: Why Industries Trust Us */
+.red-eyebrow-text {
+  color: #e52327;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.ind-trust-section {
+  padding: 70px 0;
+  background: #ffffff;
+  border-top: 1px solid #f1f5f9;
+}
+
+.trust-row-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  margin-top: 45px;
+}
+
+.trust-col-item {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-col-item:not(:last-child) {
+  border-right: 1px solid #eef2f6;
+}
+
+.trust-head-inline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.trust-circle-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.trust-circle-badge svg {
+  width: 22px;
+  height: 22px;
+  stroke: #2563eb;
+}
+
+.trust-head-inline h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0b1f3a;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.trust-col-item p {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Section 3: Our Experience in Numbers (Dark Container Box) */
+.ind-stats-section {
+  padding: 25px 0 85px;
+  background: #ffffff;
+}
+
+.ind-stats-banner {
+  background: #03142e url('assets/about-control-panel.png') center center / cover no-repeat;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 48px 24px 44px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+  box-shadow: 0 12px 36px rgba(3, 20, 46, 0.18);
+}
+
+.ind-stats-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(3, 20, 46, 0.95), rgba(3, 20, 46, 0.88));
+  z-index: 1;
+}
+
+.ind-stat-item {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.ind-stat-item:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.ind-stat-icon {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ind-stat-icon svg {
+  width: 36px;
+  height: 36px;
+  stroke: #ffffff;
+}
+
+.ind-stat-number {
+  font-family: 'Outfit', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.ind-stat-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #cbd5e1;
+  line-height: 1.35;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1180px) {
+  .ind-cards-grid-4x2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .ind-cards-grid-4x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trust-row-5 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .trust-col-item:not(:last-child) {
+    border-right: none;
+  }
+  .ind-stats-banner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .ind-stat-item:not(:last-child) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .ind-cards-grid-4x2 {
+    grid-template-columns: 1fr;
+  }
+  .trust-row-5 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .ind-stats-banner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   INDUSTRY-WISE MACHINES SECTION (Tabs)
+───────────────────────────────────────────────────────────── */
+
+.ind-machines-section {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.indmach-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.indmach-tab {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 30px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indmach-tab:hover {
+  color: #e52327;
+  border-color: rgba(229, 35, 39, 0.4);
+  background: rgba(229, 35, 39, 0.06);
+}
+
+.indmach-tab.is-active {
+  color: #ffffff;
+  background: #e52327;
+  border-color: #e52327;
+  box-shadow: 0 8px 20px rgba(229, 35, 39, 0.3);
+}
+
+.indmach-panel {
+  display: none;
+  animation: indmachFade 0.45s ease;
+}
+
+.indmach-panel.is-active {
+  display: block;
+}
+
+@keyframes indmachFade {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.indmach-panel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.indmach-media {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(3, 24, 51, 0.15);
+}
+
+.indmach-media img {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.indmach-media:hover img {
+  transform: scale(1.05);
+}
+
+.indmach-count {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: rgba(3, 24, 51, 0.85);
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border-left: 3px solid #e52327;
+}
+
+.indmach-list-wrap h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(24px, 2.6vw, 32px);
+  font-weight: 800;
+  color: #031833;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+
+.indmach-list-wrap > p {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+
+.indmach-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 24px;
+}
+
+.indmach-list li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.indmach-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(229, 35, 39, 0.12);
+  border: 1.5px solid #e52327;
+}
+
+.indmach-list li::after {
+  content: '';
+  position: absolute;
+  left: 4.5px;
+  top: 10.5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e52327;
+}
+
+@media (max-width: 992px) {
+  .indmach-panel-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .indmach-media img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .indmach-tabs {
+    gap: 8px;
+  }
+  .indmach-tab {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+  .indmach-list {
+    grid-template-columns: 1fr;
+  }
+  .indmach-media img {
+    height: 240px;
+  }
+}

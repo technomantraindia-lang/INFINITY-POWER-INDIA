@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#031a3a" />
+    <meta name="description" content="Insights, trends and expert knowledge on industrial automation, VFD drives, PLC systems, HMI & SCADA, control panels, and energy saving solutions from Infinity Power India." />
+    <title>Blog | Infinity Power India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="inquiry.css" />
+  <link rel="stylesheet" href="animations.css" />
+</head>
+  <body>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="contact-mini">
+          <a href="tel:+919979877272">☎ +91 99798 77272</a>
+          <a href="mailto:infinitypowerindia@gmail.com">✉ infinitypowerindia@gmail.com</a>
+          <span>⌖ Ahmedabad, Gujarat</span>
+        </div>
+        <div class="social-mini" aria-label="Social links">
+          <a href="#footer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#footer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#footer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#footer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.45A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.97C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#021430"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SITE HEADER -->
+    <header class="site-header" id="home">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="Infinity Power India home">
+          <img src="logo.png" alt="Infinity Power India Logo" class="site-logo-img" />
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span><span class="sr-only">Menu</span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="services.html">Services</a>
+          <a href="industries.html">Industries</a>
+          <a href="projects.html">Projects</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="downloads.html">Downloads</a>
+          <a class="active" href="blog.html">Blog</a>
+          <a href="career.html">Careers</a>
+          <a href="contact.html">Contact Us</a>
+          <a class="btn btn--small" href="contact.html">Get an Inquiry</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO BANNER -->
+      <section class="blog-hero">
+        <div class="container">
+          <span class="blog-hero-badge">OUR BLOG</span>
+          <h1>Blog</h1>
+          <p>Insights, trends and expert knowledge on industrial automation.</p>
+          <div class="blog-breadcrumbs">
+            <a href="index.html">Home</a>
+            <span class="sep">•</span>
+            <span class="current">Blog</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN BLOG SECTION -->
+      <section class="blog-section">
+        <div class="container">
+          <div class="blog-layout">
+            
+            <!-- LEFT MAIN CONTENT -->
+            <div class="blog-main-content">
+              
+              <!-- HEADER ROW -->
+              <div class="blog-header-row">
+                <div class="blog-header-title">
+                  <h2>Latest Insights &amp; Articles</h2>
+                  <p>Stay updated with the latest trends, technologies and insights in industrial automation and drive your business forward.</p>
+                </div>
+                <div class="blog-sort">
+                  <select class="blog-sort-select" aria-label="Sort articles">
+                    <option value="latest">Sort by Latest</option>
+                    <option value="oldest">Sort by Oldest</option>
+                    <option value="popular">Sort by Popular</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- 3x3 CARDS GRID (9 BLOG POSTS) -->
+              <div class="blog-grid">
+                
+                <!-- Card 1 -->
+                <article class="blog-card">
+                  <div class="blog-card-img-wrap">
+                    <img src="assets/blog-vfd.jpg" alt="How VFD Drives Improve Energy Efficiency in Industrial Applications" />
+                    <div class="blog-date-badge">
+                      <span class="day">21</span>
+                      <span class="month-year">May 2025</span>
+                    </div>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-card-cat">VFD Drives</span>
+                    <h3 class="blog-card-title">
+                      <a href="#">How VFD Drives Improve Energy Efficiency in Industrial Applications</a>
+                    </h3>
+                    <p class="blog-card-excerpt">Discover how Variable Frequency Drives help industries save energy, reduce costs and improve process efficiency.</p>
+                    <div class="blog-card-meta">
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Infinity Power India</span>
+                      </div>
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>5 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="blog-card">
+                  <div class="blog-card-img-wrap">
+                    <img src="assets/blog-plc.jpg" alt="PLC Automation: The Backbone of Modern Manufacturing" />
+                    <div class="blog-date-badge">
+                      <span class="day">18</span>
+                      <span class="month-year">May 2025</span>
+                    </div>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-card-cat">PLC Systems</span>
+                    <h3 class="blog-card-title">
+                      <a href="#">PLC Automation: The Backbone of Modern Manufacturing</a>
+                    </h3>
+                    <p class="blog-card-excerpt">Learn how PLC systems enhance automation, reliability and productivity across various industrial sectors.</p>
+                    <div class="blog-card-meta">
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Infinity Power India</span>
+                      </div>
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>6 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="blog-card">
+                  <div class="blog-card-img-wrap">
+                    <img src="assets/blog-hmi.jpg" alt="HMI vs SCADA: Understanding the Key Differences" />
+                    <div class="blog-date-badge">
+                      <span class="day">14</span>
+                      <span class="month-year">May 2025</span>
+                    </div>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-card-cat">HMI &amp; SCADA</span>
+                    <h3 class="blog-card-title">
+                      <a href="#">HMI vs SCADA: Understanding the Key Differences</a>
+                    </h3>
+                    <p class="blog-card-excerpt">A quick guide to understand the differences and how HMI and SCADA work together in automation.</p>
+                    <div class="blog-card-meta">
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Infinity Power India</span>
+                      </div>
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>4 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="blog-card">
+                  <div class="blog-card-img-wrap">
+                    <img src="assets/gal-1.png" alt="The Role of Automation in Smart Manufacturing" />
+                    <div class="blog-date-badge">
+                      <span class="day">10</span>
+                      <span class="month-year">May 2025</span>
+                    </div>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-card-cat">Industrial Automation</span>
+                    <h3 class="blog-card-title">
+                      <a href="#">The Role of Automation in Smart Manufacturing</a>
+                    </h3>
+                    <p class="blog-card-excerpt">Explore how industrial automation is transforming traditional factories into smart and connected enterprises.</p>
+                    <div class="blog-card-meta">
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Infinity Power India</span>
+                      </div>
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 16 14"/></svg>
+                        <span>5 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="blog-card">
+                  <div class="blog-card-img-wrap">
+                    <img src="assets/cat-panel-hd.png" alt="Control Panel Design: Best Practices & Key Considerations" />
+                    <div class="blog-date-badge">
+                      <span class="day">07</span>
+                      <span class="month-year">May 2025</span>
+                    </div>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-card-cat">Control Panels</span>
+                    <h3 class="blog-card-title">
+                      <a href="#">Control Panel Design: Best Practices &amp; Key Considerations</a>
+                    </h3>
+                    <p class="blog-card-excerpt">Understand the essential factors to consider while designing reliable and efficient control panels.</p>
+                    <div class="blog-card-meta">
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Infinity Power India</span>
+                      </div>
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>6 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="blog-card">
+                  <div class="blog-card-img-wrap">
+                    <img src="assets/service-maintenance.png" alt="Why Regular Maintenance Extends Equipment Life" />
+                    <div class="blog-date-badge">
+                      <span class="day">03</span>
+                      <span class="month-year">May 2025</span>
+                    </div>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-card-cat">Maintenance &amp; Support</span>
+                    <h3 class="blog-card-title">
+                      <a href="#">Why Regular Maintenance Extends Equipment Life</a>
+                    </h3>
+                    <p class="blog-card-excerpt">Learn how preventive maintenance reduces downtime and extends the life of industrial equipment.</p>
+                    <div class="blog-card-meta">
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Infinity Power India</span>
+                      </div>
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>4 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="blog-card">
+                  <div class="blog-card-img-wrap">
+                    <img src="assets/ind-power.png" alt="Energy Saving Solutions for Sustainable Industrial Growth" />
+                    <div class="blog-date-badge">
+                      <span class="day">30</span>
+                      <span class="month-year">Apr 2025</span>
+                    </div>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-card-cat">Energy Saving Solutions</span>
+                    <h3 class="blog-card-title">
+                      <a href="#">Energy Saving Solutions for Sustainable Industrial Growth</a>
+                    </h3>
+                    <p class="blog-card-excerpt">Simple and effective strategies to reduce energy consumption and achieve sustainability goals.</p>
+                    <div class="blog-card-meta">
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Infinity Power India</span>
+                      </div>
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>5 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="blog-card">
+                  <div class="blog-card-img-wrap">
+                    <img src="assets/cat-servo-hd.png" alt="Servo Drives vs VFD Drives: Which One Do You Need?" />
+                    <div class="blog-date-badge">
+                      <span class="day">26</span>
+                      <span class="month-year">Apr 2025</span>
+                    </div>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-card-cat">Servo Systems</span>
+                    <h3 class="blog-card-title">
+                      <a href="#">Servo Drives vs VFD Drives: Which One Do You Need?</a>
+                    </h3>
+                    <p class="blog-card-excerpt">Compare servo drives and VFDs to choose the right solution for your application requirements.</p>
+                    <div class="blog-card-meta">
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Infinity Power India</span>
+                      </div>
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>6 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Card 9 -->
+                <article class="blog-card">
+                  <div class="blog-card-img-wrap">
+                    <img src="assets/gal-5.png" alt="Turnkey Automation Projects: End-to-End Solutions" />
+                    <div class="blog-date-badge">
+                      <span class="day">22</span>
+                      <span class="month-year">Apr 2025</span>
+                    </div>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-card-cat">Turnkey Projects</span>
+                    <h3 class="blog-card-title">
+                      <a href="#">Turnkey Automation Projects: End-to-End Solutions</a>
+                    </h3>
+                    <p class="blog-card-excerpt">From requirement analysis to commissioning, know how we deliver complete automation solutions.</p>
+                    <div class="blog-card-meta">
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Infinity Power India</span>
+                      </div>
+                      <div class="meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>6 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+
+              <!-- PAGINATION -->
+              <div class="blog-pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <span class="page-dots">...</span>
+                <a href="#" class="page-link">8</a>
+                <a href="#" class="page-link page-link--next">Next ›</a>
+              </div>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <aside class="blog-sidebar">
+              
+              <!-- Widget 1: Search -->
+              <div class="widget widget-search">
+                <form class="widget-search-form" action="#" method="GET" onsubmit="event.preventDefault();">
+                  <input type="text" class="widget-search-input" placeholder="Search blog..." aria-label="Search blog" />
+                  <button type="submit" class="widget-search-btn" aria-label="Submit search">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  </button>
+                </form>
+              </div>
+
+              <!-- Widget 2: Categories -->
+              <div class="widget widget-categories">
+                <h3 class="widget-title">Categories</h3>
+                <ul class="widget-cat-list">
+                  <li><a href="#"><span>VFD Drives</span> <span class="cat-count">(12)</span></a></li>
+                  <li><a href="#"><span>PLC Systems</span> <span class="cat-count">(10)</span></a></li>
+                  <li><a href="#"><span>HMI &amp; SCADA</span> <span class="cat-count">(8)</span></a></li>
+                  <li><a href="#"><span>Industrial Automation</span> <span class="cat-count">(14)</span></a></li>
+                  <li><a href="#"><span>Control Panels</span> <span class="cat-count">(9)</span></a></li>
+                  <li><a href="#"><span>Maintenance &amp; Support</span> <span class="cat-count">(11)</span></a></li>
+                  <li><a href="#"><span>Energy Saving Solutions</span> <span class="cat-count">(6)</span></a></li>
+                  <li><a href="#"><span>Turnkey Projects</span> <span class="cat-count">(7)</span></a></li>
+                  <li><a href="#"><span>Company News</span> <span class="cat-count">(5)</span></a></li>
+                </ul>
+              </div>
+
+              <!-- Widget 3: Recent Posts -->
+              <div class="widget widget-recent">
+                <h3 class="widget-title">Recent Posts</h3>
+                <div class="recent-posts-list">
+                  
+                  <div class="recent-post-item">
+                    <img src="assets/blog-vfd.jpg" alt="How VFD Drives Improve Energy Efficiency" class="recent-post-img" />
+                    <div class="recent-post-info">
+                      <a href="#" class="recent-post-title">How VFD Drives Improve Energy Efficiency</a>
+                      <span class="recent-post-date">May 21, 2025</span>
+                    </div>
+                  </div>
+
+                  <div class="recent-post-item">
+                    <img src="assets/blog-plc.jpg" alt="PLC Automation: The Backbone of Modern Manufacturing" class="recent-post-img" />
+                    <div class="recent-post-info">
+                      <a href="#" class="recent-post-title">PLC Automation: The Backbone of Modern Manufacturing</a>
+                      <span class="recent-post-date">May 18, 2025</span>
+                    </div>
+                  </div>
+
+                  <div class="recent-post-item">
+                    <img src="assets/blog-hmi.jpg" alt="HMI vs SCADA: Key Differences Explained" class="recent-post-img" />
+                    <div class="recent-post-info">
+                      <a href="#" class="recent-post-title">HMI vs SCADA: Key Differences Explained</a>
+                      <span class="recent-post-date">May 14, 2025</span>
+                    </div>
+                  </div>
+
+                  <div class="recent-post-item">
+                    <img src="assets/gal-1.png" alt="The Role of Automation in Smart Manufacturing" class="recent-post-img" />
+                    <div class="recent-post-info">
+                      <a href="#" class="recent-post-title">The Role of Automation in Smart Manufacturing</a>
+                      <span class="recent-post-date">May 10, 2025</span>
+                    </div>
+                  </div>
+
+                  <div class="recent-post-item">
+                    <img src="assets/service-maintenance.png" alt="Why Regular Maintenance Extends Equipment Life" class="recent-post-img" />
+                    <div class="recent-post-info">
+                      <a href="#" class="recent-post-title">Why Regular Maintenance Extends Equipment Life</a>
+                      <span class="recent-post-date">May 03, 2025</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Widget 4: Popular Tags -->
+              <div class="widget widget-tags">
+                <h3 class="widget-title">Popular Tags</h3>
+                <div class="tags-cloud">
+                  <a href="#" class="tag-btn">VFD</a>
+                  <a href="#" class="tag-btn">PLC</a>
+                  <a href="#" class="tag-btn">HMI</a>
+                  <a href="#" class="tag-btn">SCADA</a>
+                  <a href="#" class="tag-btn">Automation</a>
+                  <a href="#" class="tag-btn">Control Panels</a>
+                  <a href="#" class="tag-btn">Energy Saving</a>
+                  <a href="#" class="tag-btn">Servo Drives</a>
+                  <a href="#" class="tag-btn">Industrial IoT</a>
+                  <a href="#" class="tag-btn">Maintenance</a>
+                </div>
+              </div>
+
+              <!-- Widget 5: Stay Updated Newsletter -->
+              <div class="widget-newsletter">
+                <div class="newsletter-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter and get the latest insights and updates.</p>
+                <form class="newsletter-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                  <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email address" />
+                  <button type="submit" class="newsletter-btn">Subscribe Now</button>
+                </form>
+              </div>
+
+            </aside>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" id="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand-col">
+          <a class="brand brand--footer" href="index.html" aria-label="Infinity Power India home">
+            <img src="logo.png" alt="Infinity Power India Logo" class="site-logo-img" />
+          </a>
+          <p>Powering Industrial Automation<br />with Innovation.</p>
+          <div class="footer-social">
+            <a href="index.html#footer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="index.html#footer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="index.html#footer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="index.html#footer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.45A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.97C5.12 20 12 20 12 20s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#021430"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Company</h3>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Our Services</a>
+          <a href="products.html">Product Portfolio</a>
+          <a href="blog.html">Blog &amp; FAQs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div>
+          <h3>Products</h3>
+          <a href="products.html">PLC Systems</a>
+          <a href="products.html">HMI Touch Panels</a>
+          <a href="products.html">VFD / AC Drives</a>
+          <a href="products.html">Control Panels</a>
+          <a href="products.html">Servo Drives</a>
+        </div>
+
+        <div>
+          <h3>Services</h3>
+          <a href="services.html">Consulting &amp; Engineering</a>
+          <a href="services.html">System Design</a>
+          <a href="services.html">Panel Building</a>
+          <a href="services.html">Installation &amp; Commissioning</a>
+          <a href="services.html">Maintenance &amp; Support</a>
+        </div>
+
+        <div>
+          <h3>Industries</h3>
+          <a href="industries.html">Automotive</a>
+          <a href="industries.html">Pharmaceuticals</a>
+          <a href="industries.html">Food &amp; Beverage</a>
+          <a href="industries.html">Water Treatment</a>
+          <a href="industries.html">Manufacturing</a>
+        </div>
+
+        <div>
+          <h3>Resources</h3>
+          <a href="downloads.html">Download Brochure</a>
+          <a href="projects.html">Case Studies</a>
+          <a href="gallery.html">Photo Gallery</a>
+          <a href="blog.html">Knowledge Base</a>
+        </div>
+
+        <address class="footer-contact-col">
+          <h3 class="contact-title">Contact Us</h3>
+          <p>📍 50, Gopal Charan Estate, Near Alok Estate B/H - Sai Palash Hotel, Near Odhav SP Ring Road Circle, Odhav, Ahmedabad - 382415, Gujarat, India.</p>
+          <a href="tel:+919979877272">☎ +91 99798 77272</a>
+          <a href="mailto:infinitypowerindia@gmail.com">✉ infinitypowerindia@gmail.com</a>
+          <a href="index.html">🌐 www.infinitypower-india.com</a>
+        </address>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container copyright-inner">
+          <span>&copy; 2025 Infinity Power India. All Rights Reserved.</span>
+          <span><a href="index.html#footer">Privacy Policy</a> <i>|</i> <a href="index.html#footer">Terms &amp; Conditions</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  <script src="inquiry.js"></script>
+  <script src="animations.js"></script>
+  </body>
+</html>

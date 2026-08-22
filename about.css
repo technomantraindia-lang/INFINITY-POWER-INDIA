@@ -1,0 +1,1004 @@
+/* ============================================================
+   ABOUT PAGE — Infinity Power India  |  about.css
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   1. HERO BANNER
+   ---------------------------------------------------------- */
+.au-hero {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  overflow: hidden;
+}
+
+.au-hero__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1800&q=85')
+    center 30% / cover no-repeat;
+}
+
+.au-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(2,18,52,0.90) 0%, rgba(3,30,70,0.72) 50%, rgba(5,30,70,0.40) 100%);
+}
+
+.au-hero__content {
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+  padding-bottom: 56px;
+}
+
+.au-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding: 5px 14px;
+  background: rgba(237, 38, 38, 0.18);
+  border: 1px solid rgba(237, 38, 38, 0.45);
+  border-radius: 20px;
+  color: #fca5a5;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.au-hero__content h1 {
+  margin: 0 0 14px;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(38px, 5vw, 68px);
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.08;
+  text-shadow: 0 4px 20px rgba(0,9,28,0.5);
+}
+
+.au-hero__tagline {
+  margin: 0 0 24px;
+  color: #c7dcf5;
+  font-size: clamp(14px, 1.4vw, 18px);
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+.au-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #94b8d8;
+  font-size: 13px;
+}
+
+.au-breadcrumb a { color: #94b8d8; text-decoration: none; transition: color 0.2s; }
+.au-breadcrumb a:hover { color: #fff; }
+.au-breadcrumb [aria-current="page"] { color: #fff; font-weight: 600; }
+
+/* ----------------------------------------------------------
+   2. SHARED SECTION HELPERS
+   ---------------------------------------------------------- */
+.au-section-eyebrow {
+  display: block;
+  text-align: center;
+  margin: 0 0 6px;
+  color: #ed2626;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.au-section-sub {
+  text-align: center;
+  max-width: 640px;
+  margin: -8px auto 36px;
+  color: #5d6b7e;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ----------------------------------------------------------
+   3. INTRO + STATS
+   ---------------------------------------------------------- */
+.au-intro {
+  background: #fff;
+  padding: 56px 0 60px;
+  border-bottom: 1px solid #e8ecf2;
+}
+
+.au-intro__grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(36px, 5vw, 80px);
+  align-items: center;
+}
+
+/* Left copy */
+.au-intro__copy .eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #ed2626;
+  margin-bottom: 12px;
+}
+
+.au-intro__copy h2 {
+  margin: 0 0 18px;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(26px, 2.6vw, 40px);
+  font-weight: 800;
+  line-height: 1.14;
+  letter-spacing: -1px;
+  color: #0b1d3c;
+}
+
+.au-intro__copy p:not(.eyebrow) {
+  margin: 0 0 12px;
+  color: #4c5b70;
+  font-size: 13.5px;
+  line-height: 1.72;
+  max-width: 400px;
+}
+
+/* Dark navy "Explore Our Solutions" button — exact match to reference */
+.au-explore-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  margin-top: 24px !important;
+  padding: 13px 22px !important;
+  background: #0b1d3c !important;
+  border: 1.5px solid #0b1d3c !important;
+  border-radius: 3px !important;
+  color: #fff !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2px;
+  transition: background 0.2s, transform 0.2s !important;
+}
+
+.au-explore-btn:hover {
+  background: #162d56 !important;
+  border-color: #162d56 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: none !important;
+}
+
+.au-explore-btn span { font-size: 18px !important; line-height: 1; }
+
+/* Right stats — "Our Strength in Numbers" */
+.au-stats { display: flex; flex-direction: column; }
+
+/* Label with a thin underline rule below it, like reference */
+.au-stats__label {
+  margin: 0 0 0 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dce3ed;
+  margin-bottom: 26px;
+  color: #0b1d3c;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* Horizontal row of 4 stats separated by vertical dividers */
+.au-stats__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.au-stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding-right: 24px;
+}
+
+/* Thin vertical grey divider */
+.au-stat-divider {
+  flex: none;
+  width: 1px;
+  height: 96px;
+  background: #dce3ed;
+  margin-right: 24px;
+  align-self: center;
+}
+
+/* Thin outline icon — no box, no fill, thin navy stroke matching reference exactly */
+.au-stat-icon {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  fill: none;
+  stroke: #1b3c6e;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  margin-bottom: 2px;
+}
+
+/* Number + plus */
+.au-stat-item__num {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  line-height: 1;
+}
+
+.au-stat-number {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 2.8vw, 40px);
+  font-weight: 800;
+  color: #0b1d3c;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.au-stat-plus {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(24px, 2.4vw, 36px);
+  font-weight: 800;
+  color: #0b1d3c;
+  line-height: 1;
+}
+
+.au-stat-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: #5d6b7e;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .au-intro__grid { grid-template-columns: 1fr; gap: 40px; }
+  .au-intro__copy p:not(.eyebrow) { max-width: none; }
+}
+
+@media (max-width: 520px) {
+  .au-stats__row { flex-wrap: wrap; row-gap: 28px; }
+  .au-stat-divider { display: none; }
+  .au-stat-item { flex: 0 0 50%; padding-right: 0; }
+}
+
+/* ----------------------------------------------------------
+   4. JOURNEY + MISSION / VISION / VALUES
+   ---------------------------------------------------------- */
+.au-journey { background: #f7f9fc; padding: 60px 0; }
+
+.au-journey__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 0.95fr;
+  gap: clamp(24px, 3vw, 52px);
+  align-items: start;
+}
+
+.au-section-heading {
+  margin: 0 0 28px;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(22px, 2vw, 30px);
+  font-weight: 800;
+  color: #031a3a;
+  letter-spacing: -0.8px;
+}
+
+/* Timeline */
+.au-timeline { list-style: none; margin: 0; padding: 0; }
+
+.au-timeline__item {
+  display: flex;
+  gap: 18px;
+  padding-bottom: 28px;
+  position: relative;
+}
+
+.au-timeline__item:not(.au-timeline__item--last)::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 18px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #ed2626 0%, #dce3ed 100%);
+}
+
+.au-timeline__dot {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #ed2626;
+  box-shadow: 0 0 0 3px rgba(237,38,38,0.15);
+  z-index: 1;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.au-timeline__dot--active {
+  background: #ed2626;
+  box-shadow: 0 0 0 4px rgba(237,38,38,0.2), 0 0 12px rgba(237,38,38,0.4);
+}
+
+.au-timeline__item:hover .au-timeline__dot { transform: scale(1.25); }
+
+.au-timeline__body strong {
+  display: block;
+  color: #031a3a;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.au-timeline__body p {
+  margin: 0;
+  color: #5d6b7e;
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+/* Centre photo */
+.au-journey__photo {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #dce3ed;
+  box-shadow: 0 10px 32px rgba(5,27,60,0.13);
+  height: 380px;
+}
+
+.au-journey__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.au-journey__photo:hover img { transform: scale(1.04); }
+
+.au-journey__photo-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(3,26,58,0.88);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  backdrop-filter: blur(4px);
+}
+
+/* Mission / Vision / Values */
+.au-mvv { display: flex; flex-direction: column; gap: 14px; }
+
+.au-mvv__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px 22px;
+  background: #fff;
+  border: 1px solid #dce3ed;
+  border-left: 4px solid #1766c7;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(5,27,60,0.05);
+  transition: box-shadow 0.3s, transform 0.3s, border-left-color 0.3s;
+}
+
+.au-mvv__card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 22px rgba(23,102,199,0.12);
+  border-left-color: #ed2626;
+}
+
+.au-mvv__icon-wrap {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f0fe;
+  border-radius: 10px;
+  margin-top: 2px;
+  transition: background 0.3s;
+}
+
+.au-mvv__card:hover .au-mvv__icon-wrap { background: #fef2f2; }
+.au-mvv__card:hover .au-mvv__icon-wrap svg { stroke: #ed2626; }
+
+.au-mvv__text h3 {
+  margin: 0 0 7px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #031a3a;
+}
+
+.au-mvv__text p {
+  margin: 0;
+  color: #5d6b7e;
+  font-size: 13.5px;
+  line-height: 1.62;
+}
+
+@media (max-width: 1100px) {
+  .au-journey__grid { grid-template-columns: 1fr 1fr; }
+  .au-journey__photo { grid-row: span 2; }
+  .au-mvv { flex-direction: row; flex-wrap: wrap; }
+  .au-mvv__card { flex: 1 1 calc(50% - 8px); }
+}
+@media (max-width: 680px) {
+  .au-journey__grid { grid-template-columns: 1fr; }
+  .au-journey__photo { height: 240px; grid-row: auto; }
+  .au-mvv { flex-direction: column; }
+  .au-mvv__card { flex: none; }
+}
+
+/* ----------------------------------------------------------
+   5. WHAT WE DO — 6-card grid
+   ---------------------------------------------------------- */
+.au-whatwedo { background: #fff; padding: 60px 0; }
+
+.au-wwd-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.au-wwd-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #dce3ed;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(5,27,60,0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.au-wwd-card:hover {
+  transform: translateY(-8px);
+  border-color: #1766c7;
+  box-shadow: 0 14px 34px rgba(23,102,199,0.16);
+}
+
+.au-wwd-card__img {
+  position: relative;
+  width: 100%;
+  height: 195px;
+  overflow: hidden;
+  background: #e9eef5;
+}
+
+.au-wwd-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.au-wwd-card:hover .au-wwd-card__img img { transform: scale(1.08); }
+
+.au-wwd-card__icon-wrap {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(23,102,199,0.85);
+  border: 1.5px solid rgba(255,255,255,0.4);
+  border-radius: 9px;
+  backdrop-filter: blur(4px);
+  transition: background 0.3s;
+}
+
+.au-wwd-card:hover .au-wwd-card__icon-wrap { background: rgba(237,38,38,0.85); }
+
+.au-wwd-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 20px 16px;
+}
+
+.au-wwd-card__body h3 {
+  margin: 0 0 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #031a3a;
+  line-height: 1.25;
+}
+
+.au-wwd-card__body p {
+  margin: 0 0 16px;
+  color: #5d6b7e;
+  font-size: 13.5px;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.au-wwd-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #1766c7;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.2s, color 0.2s;
+  margin-top: auto;
+}
+
+.au-wwd-link:hover { gap: 9px; color: #ed2626; }
+
+@media (max-width: 1100px) { .au-wwd-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 580px) {
+  .au-wwd-grid { grid-template-columns: 1fr; gap: 14px; }
+  .au-wwd-card__img { height: 165px; }
+}
+
+/* ----------------------------------------------------------
+   6. LEADERSHIP TEAM
+   ---------------------------------------------------------- */
+.au-team { background: #f7f9fc; padding: 60px 0; }
+
+.au-team__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.au-team-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #dce3ed;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(5,27,60,0.06);
+  transition: transform 0.35s, box-shadow 0.35s, border-color 0.35s;
+}
+
+.au-team-card:hover {
+  transform: translateY(-8px);
+  border-color: #1766c7;
+  box-shadow: 0 14px 34px rgba(23,102,199,0.15);
+}
+
+.au-team-card__photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.1;
+  overflow: hidden;
+  background: #e0e8f5;
+}
+
+.au-team-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.45s ease;
+}
+
+.au-team-card:hover .au-team-card__photo img { transform: scale(1.06); }
+
+.au-team-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(3,26,58,0.75) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 12px;
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+
+.au-team-card:hover .au-team-card__overlay { opacity: 1; }
+
+.au-team-card__linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #0a66c2;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.au-team-card__linkedin:hover { background: #004182; transform: scale(1.12); }
+
+.au-team-card__info {
+  padding: 18px 18px 20px;
+}
+
+.au-team-card__info h3 {
+  margin: 0 0 4px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #031a3a;
+}
+
+.au-team-card__role {
+  margin: 0 0 10px;
+  color: #1766c7;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.au-team-card__bio {
+  margin: 0;
+  color: #5d6b7e;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) { .au-team__grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
+@media (max-width: 480px) { .au-team__grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+
+/* ----------------------------------------------------------
+   7. CERTIFICATIONS
+   ---------------------------------------------------------- */
+.au-certs { background: #fff; padding: 60px 0; }
+
+.au-certs__row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+}
+
+.au-cert-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #f7f9fc;
+  border: 1px solid #dce3ed;
+  border-radius: 12px;
+  padding: 28px 16px 22px;
+  box-shadow: 0 3px 10px rgba(5,27,60,0.05);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.au-cert-card:hover {
+  transform: translateY(-6px);
+  border-color: #1766c7;
+  box-shadow: 0 10px 26px rgba(23,102,199,0.14);
+}
+
+/* Logo area inside each cert card */
+.au-cert-card__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  background: #031a3a;
+  border: 2px solid #1766c7;
+  box-shadow: 0 4px 14px rgba(23,102,199,0.25);
+  transition: box-shadow 0.3s;
+}
+
+.au-cert-card:hover .au-cert-card__logo {
+  box-shadow: 0 6px 20px rgba(23,102,199,0.35);
+}
+
+.au-cert-card__logo span {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  color: #87baff;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.au-cert-card__logo strong {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.au-cert-card__logo small {
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: #87baff;
+  letter-spacing: 0.5px;
+}
+
+/* Colour variants */
+.au-cert-card__logo--iso {
+  background: linear-gradient(135deg, #031a3a, #072d60);
+  border-color: #1766c7;
+}
+
+.au-cert-card__logo--green {
+  background: linear-gradient(135deg, #022b14, #064d25);
+  border-color: #16a34a;
+}
+
+.au-cert-card__logo--green span,
+.au-cert-card__logo--green small { color: #86efac; }
+
+.au-cert-card__logo--orange {
+  background: linear-gradient(135deg, #2c1a03, #4d2e06);
+  border-color: #d97706;
+}
+
+.au-cert-card__logo--orange span,
+.au-cert-card__logo--orange small { color: #fcd34d; }
+
+.au-cert-card__logo--ce {
+  background: linear-gradient(135deg, #1a0e3a, #2e1a60);
+  border-color: #7c3aed;
+}
+
+.au-cert-card__logo--ce span {
+  font-size: 30px;
+  color: #c4b5fd;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.au-cert-card__logo--msme {
+  background: linear-gradient(135deg, #2c1a03, #4d3206);
+  border-color: #f59e0b;
+}
+
+.au-cert-card__logo--msme span {
+  font-size: 16px;
+  color: #fde68a;
+  letter-spacing: 0;
+}
+
+.au-cert-card__logo--gst {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #022b14, #054d25);
+  border-color: #22c55e;
+}
+
+.au-cert-card__logo--gst svg { stroke: #86efac; }
+
+.au-cert-card__logo--gst span {
+  font-size: 18px;
+  color: #86efac;
+  font-weight: 900;
+}
+
+/* Text inside cert card */
+.au-cert-card h4 {
+  margin: 0 0 8px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #031a3a;
+  line-height: 1.3;
+}
+
+.au-cert-card p {
+  margin: 0;
+  color: #5d6b7e;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+@media (max-width: 1100px) { .au-certs__row { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .au-certs__row { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+
+/* ----------------------------------------------------------
+   8. WHY CHOOSE — 6 cards in a single row, light bg icons
+   ---------------------------------------------------------- */
+.au-why-section {
+  position: relative;
+  background: #f8fafc;
+  padding: 60px 0 68px;
+  overflow: hidden;
+}
+
+/* Title */
+.au-why-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 0 40px;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 700;
+  color: #0b1d3c;
+  letter-spacing: -0.4px;
+  text-align: center;
+}
+
+.au-why-title::before,
+.au-why-title::after {
+  content: '';
+  flex: 0 0 52px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #3b82f6);
+}
+
+.au-why-title::after {
+  background: linear-gradient(90deg, #3b82f6, transparent);
+}
+
+/* Single-row 6-column grid */
+.au-why-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+/* Each card */
+.au-why-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 32px 18px 28px;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.au-why-card:hover {
+  transform: translateY(-7px);
+  border-color: #93c5fd;
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.14);
+}
+
+/* Icon box — light blue square, exactly like reference */
+.au-why-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #eff6ff;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  flex: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.au-why-card:hover .au-why-icon {
+  background: #dbeafe;
+  transform: scale(1.08);
+}
+
+.au-why-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: #3b82f6;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  transition: stroke 0.3s;
+}
+
+.au-why-card:hover .au-why-icon svg { stroke: #2563eb; }
+
+.au-why-card h3 {
+  margin: 0 0 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0b1d3c;
+  line-height: 1.3;
+}
+
+.au-why-card p {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Circuit decorations */
+.au-why-circuit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 320px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.au-why-circuit--left  { left: 0; }
+.au-why-circuit--right { right: 0; }
+.au-why-section .container { position: relative; z-index: 1; }
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .au-why-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+}
+
+@media (max-width: 680px) {
+  .au-why-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .au-why-card { padding: 24px 14px 20px; }
+  .au-why-icon { width: 52px; height: 52px; border-radius: 11px; }
+  .au-why-icon svg { width: 26px; height: 26px; }
+  .au-why-card h3 { font-size: 13px; }
+  .au-why-card p { font-size: 11.5px; }
+  .au-why-circuit { display: none; }
+}
+
+/* ----------------------------------------------------------
+   9. HERO RESPONSIVE
+   ---------------------------------------------------------- */
+@media (max-width: 860px) {
+  .au-hero { min-height: 300px; }
+  .au-hero__content { padding-top: 60px; padding-bottom: 40px; }
+  .au-hero__content h1 { font-size: 42px; }
+}
+
+@media (max-width: 560px) {
+  .au-hero { min-height: 240px; }
+  .au-hero__content h1 { font-size: 34px; letter-spacing: -1px; }
+  .au-hero__tagline { font-size: 13.5px; }
+  .au-hero__eyebrow { font-size: 10px; }
+}
+
+/* (explore btn styles moved to section 3 above) */
+
+/* ----------------------------------------------------------
+   SAFE FALLBACK — ensure .reveal elements are always visible
+   on about.html even if JS fails or observer misfires
+   ---------------------------------------------------------- */
+
+/* Force all reveal elements visible after a short delay */
+@keyframes au-force-show {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  animation: au-force-show 0s 1.2s forwards;
+}
+
+.reveal.reveal-visible {
+  animation: none;
+  opacity: 1;
+  transform: translateY(0);
+}

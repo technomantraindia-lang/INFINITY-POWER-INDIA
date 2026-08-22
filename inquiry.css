@@ -1,0 +1,261 @@
+/* ==========================================================================
+   Get an Inquiry — Popup Modal
+   ========================================================================== */
+
+.inquiry-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+}
+
+.inquiry-modal.is-open {
+  display: block;
+}
+
+.inquiry-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 12, 30, 0.72);
+  backdrop-filter: blur(4px);
+  animation: inqFade 0.25s ease;
+}
+
+.inquiry-modal__dialog {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 600px);
+  max-height: 90vh;
+  overflow-y: auto;
+  margin: 5vh auto 0;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(3, 12, 30, 0.35);
+  padding: 32px 32px 28px;
+  animation: inqPop 0.28s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.inquiry-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #031a3a;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.inquiry-modal__close:hover {
+  background: #e52327;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+.inquiry-modal__badge {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: rgba(229, 35, 39, 0.08);
+  border: 1px solid rgba(229, 35, 39, 0.25);
+  color: #e52327;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.inquiry-modal__title {
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 800;
+  color: #031a3a;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.inquiry-modal__sub {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+/* ---- Form ---- */
+.inq-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.inq-field {
+  margin-bottom: 14px;
+}
+
+.inq-field label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #031a3a;
+  margin-bottom: 6px;
+}
+
+.inq-field label .req {
+  color: #e52327;
+}
+
+.inq-field input,
+.inq-field select,
+.inq-field textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 9px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #031a3a;
+  background: #f8fafc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.inq-field textarea {
+  resize: vertical;
+  min-height: 84px;
+}
+
+.inq-field input:focus,
+.inq-field select:focus,
+.inq-field textarea:focus {
+  outline: none;
+  border-color: #e52327;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(229, 35, 39, 0.12);
+}
+
+.inq-field.has-error input,
+.inq-field.has-error select,
+.inq-field.has-error textarea {
+  border-color: #e52327;
+  background: #fef2f2;
+}
+
+.inq-error-msg {
+  display: none;
+  font-size: 12px;
+  color: #e52327;
+  margin-top: 4px;
+}
+
+.inq-field.has-error .inq-error-msg {
+  display: block;
+}
+
+.inquiry-submit {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #e52327, #ff4d4f);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(229, 35, 39, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inquiry-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(229, 35, 39, 0.42);
+}
+
+.inquiry-note {
+  text-align: center;
+  font-size: 12.5px;
+  color: #94a3b8;
+  margin-top: 14px;
+}
+
+.inquiry-note a {
+  color: #e52327;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ---- Success state ---- */
+.inquiry-success {
+  display: none;
+  text-align: center;
+  padding: 28px 8px 12px;
+}
+
+.inquiry-success.is-visible {
+  display: block;
+}
+
+.inquiry-success__icon {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #ffffff;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.35);
+  animation: inqCheck 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.inquiry-success h4 {
+  font-size: 21px;
+  font-weight: 800;
+  color: #031a3a;
+  margin-bottom: 8px;
+}
+
+.inquiry-success p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.65;
+}
+
+/* ---- Animations ---- */
+@keyframes inqFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes inqPop {
+  from { opacity: 0; transform: translateY(24px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes inqCheck {
+  from { opacity: 0; transform: scale(0.4); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 560px) {
+  .inquiry-modal__dialog {
+    margin: 3vh auto 0;
+    padding: 26px 20px 22px;
+  }
+
+  .inq-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

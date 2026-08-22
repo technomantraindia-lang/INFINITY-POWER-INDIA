@@ -1,0 +1,483 @@
+/* ─────────────────────────────────────────────────────────────
+   DOWNLOADS PAGE STYLES - INFINITY POWER INDIA
+   Matching download page.png exactly
+───────────────────────────────────────────────────────────── */
+
+/* Hero Section */
+.dl-hero {
+  position: relative;
+  background: #021226 url('assets/dl-hero.png') center center / cover no-repeat;
+  color: #ffffff;
+  padding: 85px 0 90px;
+  overflow: hidden;
+}
+
+.dl-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(2, 18, 38, 0.92) 0%, rgba(3, 26, 56, 0.85) 50%, rgba(2, 18, 38, 0.70) 100%);
+}
+
+.dl-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.dl-hero-badge {
+  display: inline-block;
+  background: rgba(229, 35, 39, 0.15);
+  border: 1px solid rgba(229, 35, 39, 0.4);
+  color: #ff4d4f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.dl-hero h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(38px, 4.5vw, 54px);
+  font-weight: 800;
+  margin: 0 0 14px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.dl-hero p {
+  max-width: 580px;
+  font-size: 15px;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.dl-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.dl-breadcrumbs a {
+  color: #e5e7eb;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.dl-breadcrumbs a:hover {
+  color: #3b82f6;
+}
+
+.dl-breadcrumbs span.separator {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.dl-breadcrumbs span.current {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* Red Eyebrow Accent */
+.red-eyebrow-text {
+  color: #e52327;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-center-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 40px;
+}
+
+.section-center-head h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 800;
+  color: #081936;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+  line-height: 1.18;
+}
+
+.section-center-head p {
+  color: #64748b;
+  font-size: 14.5px;
+  margin: 0;
+  line-height: 1.65;
+}
+
+/* Downloads Main Grid Section */
+.dl-grid-section {
+  padding: 85px 0 90px;
+  background: #ffffff;
+}
+
+/* Filter Pills */
+.dl-filter-pills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.filter-pill {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-pill:hover {
+  border-color: #03142e;
+  color: #03142e;
+}
+
+.filter-pill.active {
+  background: #03142e;
+  border-color: #03142e;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(3, 20, 46, 0.25);
+}
+
+/* 4-Column Downloads Grid */
+.dl-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Download Card */
+.dl-card {
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.dl-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(3, 24, 51, 0.1);
+  border-color: #cbd5e1;
+}
+
+.dl-card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+  background: #091a34;
+}
+
+.dl-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.dl-card:hover .dl-card-img-wrap img {
+  transform: scale(1.05);
+}
+
+/* PDF Red Badge Overlay */
+.dl-pdf-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #e52327;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(229, 35, 39, 0.4);
+  z-index: 2;
+}
+
+.dl-pdf-badge svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
+/* Card Body */
+.dl-card-body {
+  padding: 20px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.dl-card-body h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #081936;
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+
+.dl-card-body p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+/* Card Footer / Meta & Download Row */
+.dl-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 12.5px;
+}
+
+.dl-meta-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.dl-meta-info svg {
+  width: 14px;
+  height: 14px;
+  fill: #64748b;
+}
+
+.dl-meta-divider {
+  color: #cbd5e1;
+}
+
+.dl-btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #e52327;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.dl-btn-download:hover {
+  color: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.dl-btn-download svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+/* Features Highlights Bar */
+.dl-features-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 32px 36px;
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.dl-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.dl-feature-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  background: #081936;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.dl-feature-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.dl-feature-text h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #081936;
+  margin: 0 0 3px;
+}
+
+.dl-feature-text p {
+  font-size: 12.5px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Inquiry CTA Box */
+.dl-cta-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 28px 36px;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.dl-cta-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dl-cta-icon-wrap {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  background: #f1f5f9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #081936;
+}
+
+.dl-cta-icon-wrap svg {
+  width: 26px;
+  height: 26px;
+  fill: none;
+  stroke: #081936;
+  stroke-width: 1.8;
+}
+
+.dl-cta-text h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  color: #081936;
+  margin: 0 0 4px;
+}
+
+.dl-cta-text p {
+  font-size: 13.5px;
+  color: #64748b;
+  margin: 0;
+}
+
+.dl-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e52327;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+  white-space: nowrap;
+}
+
+.dl-cta-btn:hover {
+  background: #c81e22;
+  transform: translateY(-2px);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE BREAKPOINTS
+───────────────────────────────────────────────────────────── */
+
+@media (max-width: 1180px) {
+  .dl-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .dl-features-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 860px) {
+  .dl-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .dl-cta-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 24px;
+  }
+
+  .dl-cta-left {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .dl-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dl-features-box {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .dl-hero {
+    padding: 60px 0 70px;
+  }
+}

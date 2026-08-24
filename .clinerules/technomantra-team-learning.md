@@ -2,7 +2,172 @@
 
 Use these as proven team references, not as instructions to copy blindly. Current user prompt and current-project conventions always win.
 
-## Pattern 1: Validation pattern · contact.html
+## Pattern 1: Responsive carousel / slider · CSST10I15-CSST10I10.html
+- Category: ui.carousel
+- Quality: 95 · Status: approved
+Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DaTo CSST Screw Air Compressor | Datronix Autotech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="DAS723.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html" aria-label="Datronix Autotech home">
+        <img src="../photos/logo.png" alt="Datronix Autotech">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../page/about.html">About Us</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-drop-toggle active" aria-expanded="false" aria-haspopup="true" aria-controls="products-submenu">Products</button>
+          <div class="dropdown-menu" id="products-submenu" role="menu">
+            <a role="menuitem" href="../page/categori.html">All products</a>
+            <a role="menuitem" href="DAS528.html">DAS528 DaTo Diagnostic Car Scanner</a>
+            <a role="menuitem" href="DAS722.html">DAS722 Da To Diagnostic Car Scanner</a>
+            <a role="menuitem" href="DASXG3.html">DAS X-G3 IMMO Programming</a>
+            <a role="menuitem" href="DAS701.html">DaTo DAS701 Super Scanner</a>
+            <a role="menuitem" href="DAS723.html">DaTo DAS723 PRO ULTRA</a>
+            <a role="menuitem" href="DASG3.html">DaTo DASG3 Key Programmer</a>
+            <a role="menuitem" href="DAS1026.html">Bluetooth OBD2 Scanner DAS1026</a>
+            <a role="menuitem" href="ADAS-RADAR.html">ADAS RADAR Trio Cipher Calibration</a>
+            <a role="menuitem" href="DAS825.html">DAS825 PRO MAX</a>
+            <a role="menuitem" href="DAS623.html">EV SCANNER DaTo DAS623</a>
+            <a role="menuitem" href="DIDS-101.html">DIDS-101 Diesel Injector Testing</a>
+            <a role="menuitem" href="ACMAS301%E2%80%93AC.html">ACMAS301 AC Service Station</a>
+            <a role="menuitem" href="ACMAS302.html">ACMAS302 AC Service Station</a>
+            <a role="menuitem" href="DIGD603.html">DaTo DIGD603 GDI &amp; Piezo Injector Cleaner</a>
+            <a role="menuitem" href="PTIW1001.html">DaTo PTIW1001 Air Impact Wrench</a>
+            <a role="menuitem" href="PTIW1011.html">DaTo PTIW1011 1&Prime; Heavy Duty Impact Wrench</a>
+            <a role="menuitem" href="CSST10I15-CSST10I10.html">DaTo CSST Screw Air Compressor</a>
+            <a role="menuitem" href="DHP2050.html">DaTo DHP 2050 Shop Press &ndash; 50 Ton</a>
+          </div>
+        </div>
+        <a href="../page/service.html">Services</a>
+        <a href="../page/contact.html">Contact Us</a>
+      </
+```
+
+## Pattern 2: Responsive carousel / slider · index.html
+- Category: ui.carousel
+- Quality: 95 · Status: approved
+Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
+```
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#051b3c" />
+    <meta name="description" content="Infinity Power India — industrial automation, control panels and turnkey projects." />
+    <title>Infinity Power India | Industrial Automation</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="contact-mini"><a href="tel:+919979877272">☎ +91 99798 77272</a><a href="mailto:infinitypowerindia@gmail.com">✉ infinitypowerindia@gmail.com</a><span>⌖ Ahmedabad, Gujarat</span></div>
+        <div class="social-mini" aria-label="Social links"><a href="#contact" aria-label="LinkedIn">in</a><a href="#contact" aria-label="Facebook">f</a><a href="#contact" aria-label="Instagram">◎</a><a href="#contact" aria-label="YouTube">▶</a></div>
+      </div>
+    </div>
+
+    <header class="site-header" id="home">
+      <div class="container header__inner">
+        <a class="brand" href="#home" aria-label="Infinity Power India home">
+          <img src="logo.png" alt="Infinity Power India Logo" class="site-logo-img" />
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a class="active" href="#home">Home</a><a href="#about">About Us</a><a href="#products">Products</a><a href="#services">Services</a><a href="#industries">Industries</a><a href="#projects">Projects</a><a href="#gallery">Gallery</a><a href="#footer">Downloads</a><a href="#faq">Blog</a><a href="#footer">Careers</a><a href="#contact">Contact Us</a>
+          <a class="btn btn--small" href="#contact">Get an Inquiry</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__image" role="img" aria-label="Advanced industrial automation control room"></div>
+        <div class="hero__wash"></div>
+        <div class="container hero__content">
+          <h1>Powering Industrial<br />Automation with Innovation</h1>
+          <p>Reliable, energy-efficient and customized automation solutions engineered for smarter industrial performance.</p>
+          <div class="hero__actions"><a class="btn" href="#services">Explore Our Solutions <span>→</span></a><a class="btn btn--outline" href="#footer">Download Brochure <span>⇩</span></a></div>
+          <div class="hero-pills">
+            <span><svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" /><circle cx="12" cy="3.8" r="2.1" /><circle cx="20.2" cy="8.3" r="2.1" /><circle cx="18.5" cy="17.7" r="2.1" /><circle cx="5.5" cy="17.7" r="2.1" /><circle cx="3.8" cy="8.3" r="2.1" /><path d="M12 6v2.8m5.4 1.1-2.4 1.4m0 3.3 2.2 1.3m-10.3 0 2.2-1.3m0-3.3-2.4-1.4" /></svg>System Integrator</span>
+            <span><svg class="feature-icon" viewBox="0 0 24 24" aria-h
+```
+
+## Pattern 3: Responsive carousel / slider · index.html
+- Category: ui.carousel
+- Quality: 95 · Status: approved
+Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Precise Engineering</title>
+    <link rel="icon" href="images/fevicon.png" type="image/png">
+    <meta name="description" content="Precise Engineering is a leading HEPA Filter Manufacturer and Supplier of high-performance ULPA, Cartridge HEPA, and Pharmaceutical Air Filtration Solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/premium.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-13ZD2ZZTMD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-13ZD2ZZTMD');
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#hero" class="logo">
+                <img src="images/logo.png" alt="Precise Engineering">
+            </a>
+            <nav class="nav" id="navMenu" aria-label="Main navigation">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About us</a>
+                <div class="nav-dropdown">
+                    <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="navProductsMenu">
+                        Products
+                        <svg class="nav-dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                    </button>
+                    <ul class="nav-dropdown-menu" id="navProductsMenu" role="menu">
+                        <li role="none"><a href="products.html" class="nav-dropdown-link" role="menuitem">All Products</a></li>
+                        <li role="none" class="nav-dropdown-divider" aria-hidden="true"></li>
+                        <li role="none"><a href="product-detail.html?slug=hepa-filters" class="nav-dropdown-link" role="menuitem">HEPA Filters</a></li>
+                        <li role="none"><a href="product-detail.html?slug=ulpa-filters" class="nav-dropdown-link" role="menuitem">ULPA Filters</a></li>
+                        <li role="none"><a href="product-detail.html?slug=hot-zone-hepa-filters" class="nav-dropdown-link" role="menuitem">Hot Zone HEPA Filters</a></li>
+                        <li role="none"><a href="product-detail.html?slug=pre-filters" class="nav-dropdown-link" role="menuitem">Pre-Filters</a></li>
+                        <li role="none"><a href="product-detail.html?slug=cartridge-filters" class="nav-dropd
+```
+
+## Pattern 4: Validation pattern · index.html
 - Category: validation
 - Quality: 95 · Status: approved
 Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
@@ -10,381 +175,48 @@ Project-scoped learning extracted through the unified quality gate. Current proj
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Contact Korvanto for industrial mineral supply and export enquiries. Email info@korvanto.com or call +91 90540 07999.">
- <title>Contact Us | Korvanto</title>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="assets/css/shared/base.css?v=2">
- <link rel="stylesheet" href="assets/css/shared/header.css?v=10">
- <link rel="stylesheet" href="assets/css/shared/footer.css?v=2">
- <link rel="stylesheet" href="assets/css/shared/premium-inner.css?v=2">
- <link rel="stylesheet" href="assets/css/pages/inner.css?v=2">
- <link rel="stylesheet" href="assets/css/pages/forms.css">
- <link rel="stylesheet" href="assets/css/pages/contact.css">
- <link rel="stylesheet" href="assets/css/shared/responsive.css?v=3">
- <link rel="stylesheet" href="assets/css/shared/mobile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Precise Engineering</title>
+    <link rel="icon" href="images/fevicon.png" type="image/png">
+    <meta name="description" content="Precise Engineering is a leading HEPA Filter Manufacturer and Supplier of high-performance ULPA, Cartridge HEPA, and Pharmaceutical Air Filtration Solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/premium.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-13ZD2ZZTMD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-13ZD2ZZTMD');
+    </script>
 </head>
-<body class="inner-premium contact-page">
- <div id="header-placeholder"></div>
- <main>
- <section class="page-hero page-hero--premium">
- <div class="container premium-hero-layout">
- <div>
- <nav class="breadcrumb"><a href="index.html">Home</a> / Contact Us</nav>
- <p class="section-label">Responsive B2B Service</p>
- <h1>Contact Korvanto</h1>
- <p class="page-hero-lead">Contact Korvanto LLP's export team for product enquiries technical discussions sample requests and bulk supply requirements. Share your specifications quantity requirements and destination country—we'll recommend suitable grades and respond promptly.</p>
- </div>
- <div class="premium-hero-float reveal">
- <div class="premium-hero-glow" aria-hidden="true"></div>
- <div class="premium-hero-badge">
- <span>Get in Touch</span>
- <strong>Export Supply Enquiries</strong>
- </div>
- </div>
- </div>
- </section>
+<body>
 
- <section class="section section--mesh">
- <div class="container">
- <header class="inner-section-head inner-section-head--center contact-section-head reveal">
- <p class="section-label">Direct Lines</p>
- <h2 class="section-title">Reach Our Export Team</h2>
- </header>
-
- <div class="contact-channels reveal">
- <article class="contact-channel-card tilt-card">
- <span class="contact-channel-icon" aria-hidden="true">
- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 4h16v16H4z"/><path d="M4 7l8 6 8-6"/></svg>
- </span>
- <span class="contact-channel-label">Export Enquiries</span>
- <p class="contact-emails">
- <a href="mailto:exports@korvanto.com">exports@korvanto.com</a>
- <a href="mailto:info@korvanto.com">info@korvanto.com</a>
- <a href="mailto:j.jadeja@korvanto.com">j.jadeja@korvanto.com</a>
- </p>
- </article>
- <article class="contact-channel-card tilt-card reveal-delay-1">
- <span class="contact-channel-icon" aria-hidden="true">
- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 
-```
-
-## Pattern 2: Responsive carousel / slider · products.html
-- Category: ui.carousel
-- Quality: 95 · Status: approved
-Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Korvanto product portfolio — Bentonite Kaolin Ball Clay Laterite Chamotte Bauxite and Carbon industrial mineral families for global B2B export.">
- <title>Products | Korvanto</title>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="assets/css/shared/base.css?v=2">
- <link rel="stylesheet" href="assets/css/shared/header.css?v=10">
- <link rel="stylesheet" href="assets/css/shared/footer.css?v=2">
- <link rel="stylesheet" href="assets/css/shared/premium-inner.css?v=2">
- <link rel="stylesheet" href="assets/css/pages/inner.css?v=2">
- <link rel="stylesheet" href="assets/css/pages/product-detail.css">
- <link rel="stylesheet" href="assets/css/pages/products-catalog.css">
- <link rel="stylesheet" href="assets/css/pages/home.css">
- <link rel="stylesheet" href="assets/css/shared/responsive.css?v=3">
- <link rel="stylesheet" href="assets/css/shared/mobile.css">
-</head>
-<body class="inner-premium product-page">
- <div id="header-placeholder"></div>
- <main>
- <section class="products-portfolio-hero">
- <div class="pd-hero-deco" aria-hidden="true">
- <span class="pd-hero-orb pd-hero-orb--1"></span>
- <span class="pd-hero-orb pd-hero-orb--2"></span>
- </div>
- <div class="container pd-hero-grid">
- <div class="reveal">
- <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / Products</nav>
- <p class="section-label">Supply Catalogue</p>
- <h1>Seven Product Families.<br>One Export Partner.</h1>
- <p class="page-hero-lead">Explore Korvanto LLP&#x27;s branded industrial mineral families — each supplied with specification clarity export packaging documentation support and B2B dispatch coordination.</p>
- <div class="products-portfolio-stats"><div class="products-portfolio-stat">
- <strong>7</strong>
- <span>Branded Families</span>
- </div><div class="products-portfolio-stat">
- <strong>35+</strong>
- <span>Product Grades</span>
- </div><div class="products-portfolio-stat">
- <strong>B2B</strong>
- <span>Global Supply</span>
- </div></div>
- </div>
- <div class="products-portfolio-visual reveal reveal-delay-1">
- <div class="products-portfolio-frame tilt-card">
- <div class="products-hero-showcase">
- <div class="products-hero-media">
- <div class="products-hero-slider" aria-label="Korvanto product families">
- <div class="products-hero-slide is-active"><div class="products-hero-stage"><img src="assets/images/families/bentonite main.png" alt="Korvanto Bentonite"></div></div><div class="products-hero-slide"><div class="products-hero-stage"><img src="assets/images/families/main kaolin china clay.png" alt="Korvanto Kaolin (China Clay)"></div></div><div class="products-hero-slide"><div class="products-hero-stage"><img src="assets/images/families/ball clay home.png" alt="Korvanto Ball Clay"></div></div><div class="products-hero-slide"><div class="products-her
-```
-
-## Pattern 3: Responsive carousel / slider · products.html
-- Category: ui.carousel
-- Quality: 95 · Status: approved
-Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
-```
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Products - Billion Flex</title>
-  <meta name="description"
-    content="Explore Billion Flex product range: Paper Bags, Plastic Shopping Bags, Courier Bags, and Shrink Sleeves Labels." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.5" />
-</head>
-
-<body class="product-list-page">
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="preloader" aria-hidden="true">
-    <div class="loader-mark">BF</div>
-    <p>Billion Flex is loading</p>
-  </div>
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
-
-  <header class="site-header" id="top">
-    <nav class="navbar">
-      <a class="brand" href="index.html#top" aria-label="Billion Flex Home">
-        <img src="images and videos/new logo.png" alt="Billion Flex Logo" />
-      </a>
-            <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-menu">
-        <a href="index.html#home">Home</a>
-        <a href="about.html">About Us</a>
-        <div class="nav-dropdown">
-          <a href="products.html" class="nav-dropdown-toggle">Our Products <span class="nav-caret">&#9662;</span></a>
-          <div class="nav-dropdown-menu">
-            <a href="plastic-shopping-bags.html">Plastic Shopping Bags</a>
-            <a href="courier-bags.html">Courier Bags</a>
-            <a href="paper-bags.html">Paper Bags</a>
-            <a href="shrink-sleeves-labels.html">Shrink Sleeves Labels</a>
-          </div>
-        </div>
-        <a href="clients.html">Clients</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-      <a class="btn btn-dark nav-cta magnetic" href="contact.html"><span>Contact Us</span></a>
-    </nav>
-  </header>
-
-  <main id="main-content">
-    <section class="hero products-hero-luxe" id="products-hero">
-      <div class="products-hero-grid">
-        <!-- Left Side: Static Text Content -->
-        <div class="products-hero-left reveal">
-          <span class="eyebrow" style="color: var(--gold);"><span></span> COMPLETE PORTFOLIO</span>
-          <h1>Our Products</h1>
-          <p class="hero-text">
-            Discover our curated range of high-performance packaging solutions, engineered for consistent quality, durability, and superior brand impact.
-          </p>
-          <div class="hero-actions">
-            <a href="#products-grid" class="btn btn-dark magnetic"><span>Explore Products</span></a>
-          </div>
-        </div>
-
-        <!-- Right Side: Animated Product Carousel -->
-        <div class="products-hero-right reveal delay-1">
-          <div class="products-carousel-container">
-            <!-- Lu
-```
-
-## Pattern 4: Styling / layout system · Industries.css
-- Category: ui.styling
-- Quality: 95 · Status: approved
-Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
-```
-:root {
-  --industry-blue: #062d67;
-  --industry-navy: #031b44;
-  --industry-red: #e1111c;
-  --industry-orange: #ff671f;
-  --industry-soft: #f4f8fd;
-  --industry-text: #26344a;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.industries-page {
-  background: #fff;
-  color: var(--industry-text);
-}
-
-.industries-page .site-header {
-  border-bottom: 1px solid rgba(8, 47, 102, 0.08);
-}
-
-.industries-hero {
-   position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 48px;
-  align-items: center;
-  min-height: 500px;
-  padding: 46px 56px 34px;
-  background: url("contact-bananr.png") center center / cover no-repeat;
-  overflow: hidden;
-  text-align: left;
-}
-
-.industries-hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(7, 31, 73, 0.1);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.industries-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: transparent;
-  z-index: 0;
-}
-
-.hero-dots {
-  position: absolute;
-  left: max(28px, calc((100vw - 1320px) / 2));
-  top: 108px;
-  width: 82px;
-  height: 70px;
-  opacity: 0.72;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.82) 1.5px, transparent 2px);
-  background-size: 16px 16px;
-}
-
-.industries-hero-copy {
-  position: relative;
-  z-index: 1;
-  max-width: 540px;
-  margin-left: 70px;
-}
-
-.industries-breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 22px;
-  font-size: 13px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.industries-breadcrumb a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.industries-breadcrumb strong {
-  color: var(--industry-red);
-}
-
-.industries-hero h1 {
-  margin: 0;
-  color: #fff;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: clamp(54px, 5vw, 84px);
-  line-height: 0.98;
-  font-weight: 900;
-  letter-spacing: 0;
-}
-
-.industries-hero h1 span {
-  display: block;
-  color: var(--industry-red);
-}
-
-.industries-hero-copy i {
-  display: block;
-  width: 74px;
-  height: 5px;
-  margin: 24px 0 22px;
-  border-radius: 999px;
-  background: var(--industry-red);
-}
-
-.industries-hero p {
-  max-width: 420px;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 18px;
-  line-height: 1.7;
-  font-weight: 600;
-}
-
-.industry-card-section {
-  padding: 44px max(28px, calc((100vw - 1320px) / 2)) 48px;
-  background: #fff;
-}
-
-.industry-cards-heading {
-  max-width: 760px;
-  margin: 0 auto 34px !important;
-  text-align: center !important;
-}
-
-.industry-cards-heading > div {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 13px;
-  color: var(--industry-red);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.industry-cards-heading > div span {
-  width: 30px;
-  height: 3px;
-  border-radius: 999px;
-  background: var(--industry-red);
-}
-
-.industry-cards-heading h2 {
-  margin: 6px 0 6px;
-  color: var(--industry-blue);
-  font-size: clamp(30px, 3vw, 44px);
-  line-height: 1.08;
-  font-weight: 900;
-}
-
-.industry-cards-heading h2 strong {
-  color: var(--industry-red);
-}
-
-.industry-cards-heading p {
-  max-width: 680px;
-  margin: 0 auto;
-  color: #3f4e64;
-  font-size: 15px;
-  line-height: 1.55;
-  font-weigh
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#hero" class="logo">
+                <img src="images/logo.png" alt="Precise Engineering">
+            </a>
+            <nav class="nav" id="navMenu" aria-label="Main navigation">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About us</a>
+                <div class="nav-dropdown">
+                    <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="navProductsMenu">
+                        Products
+                        <svg class="nav-dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                    </button>
+                    <ul class="nav-dropdown-menu" id="navProductsMenu" role="menu">
+                        <li role="none"><a href="products.html" class="nav-dropdown-link" role="menuitem">All Products</a></li>
+                        <li role="none" class="nav-dropdown-divider" aria-hidden="true"></li>
+                        <li role="none"><a href="product-detail.html?slug=hepa-filters" class="nav-dropdown-link" role="menuitem">HEPA Filters</a></li>
+                        <li role="none"><a href="product-detail.html?slug=ulpa-filters" class="nav-dropdown-link" role="menuitem">ULPA Filters</a></li>
+                        <li role="none"><a href="product-detail.html?slug=hot-zone-hepa-filters" class="nav-dropdown-link" role="menuitem">Hot Zone HEPA Filters</a></li>
+                        <li role="none"><a href="product-detail.html?slug=pre-filters" class="nav-dropdown-link" role="menuitem">Pre-Filters</a></li>
+                        <li role="none"><a href="product-detail.html?slug=cartridge-filters" class="nav-dropd
 ```

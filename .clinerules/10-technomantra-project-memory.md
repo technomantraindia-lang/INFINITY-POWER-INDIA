@@ -5,8 +5,8 @@
 - Workspace: infitypower (2)
 - Technology: HTML/CSS/JavaScript
 - Active file at refresh: None
-- Local code graph: 19 files · 9 edges · 0 matched flows
-- Refreshed: 2026-08-22T06:09:49.590Z
+- Local code graph: 27 files · 12 edges · 0 matched flows
+- Refreshed: 2026-08-24T05:33:23.906Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -15,20 +15,56 @@
 - index.html
 
 ### Styles
+- industries.css
+- animations.css
+- inquiry.css
+- contact.css
+- career.css
 - styles.css
 - about.css
 - blog.css
 - downloads.css
 - gallery.css
-- industries.css
 - products.css
 - projects.css
-- services.css
 
 ## Recently edited files
-- None recorded yet
+- industries.html
+- script.js
+- industries.css
+- animations.js
+- animations.css
+- inquiry.js
+- inquiry.css
+- contact.css
+- contact.html
+- career.css
+- downloads.html
+- gallery.html
+- blog.html
+- products.html
+- projects.html
+- services.html
+- about.html
 
 ## High-value project files
+- industries.html
+- script.js
+- industries.css
+- animations.js
+- animations.css
+- inquiry.js
+- inquiry.css
+- contact.css
+- contact.html
+- career.css
+- downloads.html
+- gallery.html
+- blog.html
+- products.html
+- projects.html
+- services.html
+- about.html
 - index.html
 - README.md
 - styles.css
@@ -43,25 +79,21 @@
 - .claude/system-prompts/spec-workflow-starter.md
 - .clinerules/05-technomantra-execution-mode.md
 - .clinerules/06-technomantra-developer-mode.md
+- .clinerules/08-technomantra-task-watchdog.md
+- .clinerules/09-technomantra-multitask-isolation.md
 - .clinerules/10-technomantra-project-memory.md
 - .clinerules/11-technomantra-code-knowledge.md
+- .clinerules/12-technomantra-task-capsules.md
+- .clinerules/13-technomantra-runtime-price-optimizer.md
 - .clinerules/90-technomantra-selected-agent.md
 - .clinerules/technomantra-developer-learning.md
 - .clinerules/technomantra-team-learning.md
 - about.css
-- about.html
 - blog.css
-- blog.html
+- career.html
 - downloads.css
-- downloads.html
 - gallery.css
-- gallery.html
-- industries.css
-- industries.html
 - products.css
-- products.html
 - projects.css
-- projects.html
-- script.js
 - services.css
-- services.html
+- website data.md

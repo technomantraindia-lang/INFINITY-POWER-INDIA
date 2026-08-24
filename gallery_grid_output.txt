@@ -1,0 +1,335 @@
+            <div class="gal-item">
+              <img src="assets/rikin/auto-head.webp" alt="Auto Head" />
+              <div class="gal-item-overlay">
+                <span>Auto Head</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/automatic-pouch-packing-machine.jpg" alt="Automatic Pouch Packing Machine" />
+              <div class="gal-item-overlay">
+                <span>Automatic Pouch Packing Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/bag-cutting-sewing-machine.webp" alt="Bag Cutting Sewing Machine" />
+              <div class="gal-item-overlay">
+                <span>Bag Cutting Sewing Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/benninger-sectional-warper.jpg" alt="Benninger Sectional Warper" />
+              <div class="gal-item-overlay">
+                <span>Benninger Sectional Warper</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/blow-moulding.png" alt="Blow Moulding" />
+              <div class="gal-item-overlay">
+                <span>Blow Moulding</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/blown-film.jpg" alt="Blown Film" />
+              <div class="gal-item-overlay">
+                <span>Blown Film</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/cnc-laser-cutting.jpg" alt="CNC Laser Cutting" />
+              <div class="gal-item-overlay">
+                <span>CNC Laser Cutting</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/cnc-router.avif" alt="CNC Router" />
+              <div class="gal-item-overlay">
+                <span>CNC Router</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/core-pipe-machine.webp" alt="Core Pipe Machine" />
+              <div class="gal-item-overlay">
+                <span>Core Pipe Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/corrugated-plant.jpg" alt="Corrugated Plant" />
+              <div class="gal-item-overlay">
+                <span>Corrugated Plant</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/cut-to-length-machine.webp" alt="Cut To Length Machine" />
+              <div class="gal-item-overlay">
+                <span>Cut To Length Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/dairy-equipment.webp" alt="Dairy Equipment" />
+              <div class="gal-item-overlay">
+                <span>Dairy Equipment</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/digital-textile-printing.webp" alt="Digital Textile Printing" />
+              <div class="gal-item-overlay">
+                <span>Digital Textile Printing</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/embroidery-machine.webp" alt="Embroidery Machine" />
+              <div class="gal-item-overlay">
+                <span>Embroidery Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/fabric-folding-machine.avif" alt="Fabric Folding Machine" />
+              <div class="gal-item-overlay">
+                <span>Fabric Folding Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/fabric-mercerizing-machine.jpg" alt="Fabric Mercerizing Machine" />
+              <div class="gal-item-overlay">
+                <span>Fabric Mercerizing Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/finger-joint-machine.webp" alt="Finger Joint Machine" />
+              <div class="gal-item-overlay">
+                <span>Finger Joint Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/hot-milling.jpg" alt="Hot Milling" />
+              <div class="gal-item-overlay">
+                <span>Hot Milling</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/hydraulic-decoiler.jpg" alt="Hydraulic Decoiler" />
+              <div class="gal-item-overlay">
+                <span>Hydraulic Decoiler</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/injection-moulding.webp" alt="Injection Moulding" />
+              <div class="gal-item-overlay">
+                <span>Injection Moulding</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/lamination-plant.jpg" alt="Lamination Plant" />
+              <div class="gal-item-overlay">
+                <span>Lamination Plant</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/line-shaft.jpg" alt="Line Shaft" />
+              <div class="gal-item-overlay">
+                <span>Line Shaft</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/nc-back-gauge.jpg" alt="NC Back Gauge" />
+              <div class="gal-item-overlay">
+                <span>NC Back Gauge</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/paper-cutting-machine.avif" alt="Paper Cutting Machine" />
+              <div class="gal-item-overlay">
+                <span>Paper Cutting Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/paper-mill-automation.jpg" alt="Paper Mill Automation" />
+              <div class="gal-item-overlay">
+                <span>Paper Mill Automation</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/particleboard-plant.jpg" alt="Particleboard Plant" />
+              <div class="gal-item-overlay">
+                <span>Particleboard Plant</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/plastic-looms-machine.avif" alt="Plastic Looms Machine" />
+              <div class="gal-item-overlay">
+                <span>Plastic Looms Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/pvc-pipe-plant.jpg" alt="PVC Pipe Plant" />
+              <div class="gal-item-overlay">
+                <span>PVC Pipe Plant</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/ring-frame-machine.jpeg" alt="Ring Frame Machine" />
+              <div class="gal-item-overlay">
+                <span>Ring Frame Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/rotogravure-printing.webp" alt="Rotogravure Printing" />
+              <div class="gal-item-overlay">
+                <span>Rotogravure Printing</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/screw-extruder-machine.webp" alt="Screw Extruder Machine" />
+              <div class="gal-item-overlay">
+                <span>Screw Extruder Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/sectional-drive-panel-system.jpg" alt="Sectional Drive Panel System" />
+              <div class="gal-item-overlay">
+                <span>Sectional Drive Panel System</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/sheet-metal-punching.webp" alt="Sheet Metal Punching" />
+              <div class="gal-item-overlay">
+                <span>Sheet Metal Punching</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/sheet-metal-straightener.jpg" alt="Sheet Metal Straightener" />
+              <div class="gal-item-overlay">
+                <span>Sheet Metal Straightener</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/simple-rewinder.jpg" alt="Simple Rewinder" />
+              <div class="gal-item-overlay">
+                <span>Simple Rewinder</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/slitter-rewinder.webp" alt="Slitter Rewinder" />
+              <div class="gal-item-overlay">
+                <span>Slitter Rewinder</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/spm-packing-machine.jpg" alt="SPM Packing Machine" />
+              <div class="gal-item-overlay">
+                <span>SPM Packing Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/steam-boiler.webp" alt="Steam Boiler" />
+              <div class="gal-item-overlay">
+                <span>Steam Boiler</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/stenter-machine.webp" alt="Stenter Machine" />
+              <div class="gal-item-overlay">
+                <span>Stenter Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/sunmica-lamination-machine.avif" alt="Sunmica Lamination Machine" />
+              <div class="gal-item-overlay">
+                <span>Sunmica Lamination Machine</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/tape-plant-cheese-winder.jpg" alt="Tape Plant Cheese Winder" />
+              <div class="gal-item-overlay">
+                <span>Tape Plant Cheese Winder</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/textile-stenter-automation.webp" alt="Textile Stenter Automation" />
+              <div class="gal-item-overlay">
+                <span>Textile Stenter Automation</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/trim-winder.webp" alt="Trim Winder" />
+              <div class="gal-item-overlay">
+                <span>Trim Winder</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/turret-punching.jpg" alt="Turret Punching" />
+              <div class="gal-item-overlay">
+                <span>Turret Punching</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/twin-drum-rewinder.jpg" alt="Twin Drum Rewinder" />
+              <div class="gal-item-overlay">
+                <span>Twin Drum Rewinder</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/winder-unwinder-plastic.webp" alt="Winder Unwinder Plastic" />
+              <div class="gal-item-overlay">
+                <span>Winder Unwinder Plastic</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/winding-rewinding.avif" alt="Winding Rewinding" />
+              <div class="gal-item-overlay">
+                <span>Winding Rewinding</span>
+              </div>
+            </div>
+
+            <div class="gal-item">
+              <img src="assets/rikin/wood-sheet-cutting.webp" alt="Wood Sheet Cutting" />
+              <div class="gal-item-overlay">
+                <span>Wood Sheet Cutting</span>
+              </div>
+            </div>

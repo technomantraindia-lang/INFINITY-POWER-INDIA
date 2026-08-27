@@ -63,160 +63,26 @@ Project-scoped learning extracted through the unified quality gate. Current proj
       </
 ```
 
-## Pattern 2: Responsive carousel / slider · index.html
+## Pattern 2: Responsive carousel / slider · service-detail-bulk.css
 - Category: ui.carousel
 - Quality: 95 · Status: approved
 Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
 ```
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#051b3c" />
-    <meta name="description" content="Infinity Power India — industrial automation, control panels and turnkey projects." />
-    <title>Infinity Power India | Industrial Automation</title>
-    <link rel="preconnect" href="https://images.unsplash.com" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="topbar">
-      <div class="container topbar__inner">
-        <div class="contact-mini"><a href="tel:+919979877272">☎ +91 99798 77272</a><a href="mailto:infinitypowerindia@gmail.com">✉ infinitypowerindia@gmail.com</a><span>⌖ Ahmedabad, Gujarat</span></div>
-        <div class="social-mini" aria-label="Social links"><a href="#contact" aria-label="LinkedIn">in</a><a href="#contact" aria-label="Facebook">f</a><a href="#contact" aria-label="Instagram">◎</a><a href="#contact" aria-label="YouTube">▶</a></div>
-      </div>
-    </div>
-
-    <header class="site-header" id="home">
-      <div class="container header__inner">
-        <a class="brand" href="#home" aria-label="Infinity Power India home">
-          <img src="logo.png" alt="Infinity Power India Logo" class="site-logo-img" />
-        </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
-        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-          <a class="active" href="#home">Home</a><a href="#about">About Us</a><a href="#products">Products</a><a href="#services">Services</a><a href="#industries">Industries</a><a href="#projects">Projects</a><a href="#gallery">Gallery</a><a href="#footer">Downloads</a><a href="#faq">Blog</a><a href="#footer">Careers</a><a href="#contact">Contact Us</a>
-          <a class="btn btn--small" href="#contact">Get an Inquiry</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero__image" role="img" aria-label="Advanced industrial automation control room"></div>
-        <div class="hero__wash"></div>
-        <div class="container hero__content">
-          <h1>Powering Industrial<br />Automation with Innovation</h1>
-          <p>Reliable, energy-efficient and customized automation solutions engineered for smarter industrial performance.</p>
-          <div class="hero__actions"><a class="btn" href="#services">Explore Our Solutions <span>→</span></a><a class="btn btn--outline" href="#footer">Download Brochure <span>⇩</span></a></div>
-          <div class="hero-pills">
-            <span><svg class="feature-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" /><circle cx="12" cy="3.8" r="2.1" /><circle cx="20.2" cy="8.3" r="2.1" /><circle cx="18.5" cy="17.7" r="2.1" /><circle cx="5.5" cy="17.7" r="2.1" /><circle cx="3.8" cy="8.3" r="2.1" /><path d="M12 6v2.8m5.4 1.1-2.4 1.4m0 3.3 2.2 1.3m-10.3 0 2.2-1.3m0-3.3-2.4-1.4" /></svg>System Integrator</span>
-            <span><svg class="feature-icon" viewBox="0 0 24 24" aria-h
+:root{--sbs-green-dark:#1b4332;--sbs-green:#2d6a4f;--sbs-green-accent:#52b788;--sbs-green-bright:#7cb518;--sbs-green-pale:#e8f5e9;--sbs-green-soft:#f4f8f2;--sbs-beige:#f7f6f2;--sbs-white:#ffffff;--sbs-gray-100:#f3f5f3;--sbs-gray-400:#9ca3af;--sbs-gray-600:#4b5563;--sbs-gray-800:#1a1f2e;--sbs-font-serif:'Playfair Display',Georgia,serif;--sbs-font-sans:'Poppins',sans-serif;--sbs-pad-x:clamp(24px, 5vw, 80px);--sbs-shadow:0 8px 32px rgba(27, 67, 50, 0.1);--sbs-transition:0.35s cubic-bezier(0.4, 0, 0.2, 1)}body.service-bulk-page{font-family:var(--sbs-font-sans);font-size:calc(14px * var(--type-scale, 1.22));color:var(--sbs-gray-800);line-height:1.65;overflow-x:hidden;background:var(--sbs-white);-webkit-font-smoothing:antialiased}body.service-bulk-page .nav-list a.active{color:#7cb518}body.service-bulk-page .nav-list a.active::after{background:#7cb518}.sbs-sprite{position:absolute;width:0;height:0;overflow:hidden}.sbs-container{width:100%;max-width:100%;margin:0 auto;padding:0 var(--sbs-pad-x)}.sbs-svg-icon{display:block;flex-shrink:0;color:currentColor}.sbs-svg-icon--btn{width:18px;height:18px}.sbs-svg-icon--play{width:20px;height:20px}.sbs-svg-icon--check{width:14px;height:14px;color:var(--sbs-white)}.sbs-svg-icon--pill{width:22px;height:22px;color:var(--sbs-green)}.sbs-svg-icon--step{width:24px;height:24px;color:var(--sbs-green)}.sbs-label-leaf{width:22px;height:22px;object-fit:contain;flex-shrink:0}.sbs-label-leaf--center{display:block;margin:0 auto 10px}.sbs-icon-img{width:28px;height:28px;object-fit:contain;display:block}.sbs-section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sbs-green-bright);margin-bottom:10px}.sbs-section-head{text-align:center;margin-bottom:clamp(28px,4vw,40px)}.sbs-section-head h2{font-family:var(--sbs-font-serif);font-size:clamp(26px, 3vw, 34px);font-weight:700;color:var(--sbs-green-dark);margin:0}.sbs-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;font-size:14px;font-weight:600;border-radius:8px;border:none;cursor:pointer;font-family:inherit;text-decoration:none;transition:transform var(--sbs-transition),box-shadow var(--sbs-transition),background var(--sbs-transition);white-space:nowrap}.sbs-btn-primary{background:linear-gradient(135deg,#1b4332,#2d6a4f);color:var(--sbs-white)}.sbs-btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(27,67,50,.25)}.sbs-btn-video{background:var(--sbs-white);color:var(--sbs-green-dark);border:1.5px solid var(--sbs-green-dark)}.sbs-btn-video:hover{border-color:var(--sbs-green-accent);transform:translateY(-2px)}.sbs-btn-white{background:var(--sbs-white);color:var(--sbs-green-dark)}.sbs-btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.12)}.sbs-btn-outline-white{background:0 0;color:var(--sbs-white);border:1.5px solid rgba(255,255,255,.85)}.sbs-btn-outline-white:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}.sbs-hero{position:relative;overflow:hidden;min-height:clamp(420px,42vw,520px);padding:clamp(120px,14vw,150px) 0 clamp(56px,7vw,72px);background:var(--sbs-white)}.sbs-hero-bg{positi
 ```
 
-## Pattern 3: Responsive carousel / slider · index.html
-- Category: ui.carousel
+## Pattern 3: Styling / layout system · service-detail-bulk.css
+- Category: ui.styling
 - Quality: 95 · Status: approved
 Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Precise Engineering</title>
-    <link rel="icon" href="images/fevicon.png" type="image/png">
-    <meta name="description" content="Precise Engineering is a leading HEPA Filter Manufacturer and Supplier of high-performance ULPA, Cartridge HEPA, and Pharmaceutical Air Filtration Solutions.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="assets/css/premium.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-13ZD2ZZTMD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-13ZD2ZZTMD');
-    </script>
-</head>
-<body>
-
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container header-inner">
-            <a href="#hero" class="logo">
-                <img src="images/logo.png" alt="Precise Engineering">
-            </a>
-            <nav class="nav" id="navMenu" aria-label="Main navigation">
-                <a href="#hero" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About us</a>
-                <div class="nav-dropdown">
-                    <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="navProductsMenu">
-                        Products
-                        <svg class="nav-dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-                    </button>
-                    <ul class="nav-dropdown-menu" id="navProductsMenu" role="menu">
-                        <li role="none"><a href="products.html" class="nav-dropdown-link" role="menuitem">All Products</a></li>
-                        <li role="none" class="nav-dropdown-divider" aria-hidden="true"></li>
-                        <li role="none"><a href="product-detail.html?slug=hepa-filters" class="nav-dropdown-link" role="menuitem">HEPA Filters</a></li>
-                        <li role="none"><a href="product-detail.html?slug=ulpa-filters" class="nav-dropdown-link" role="menuitem">ULPA Filters</a></li>
-                        <li role="none"><a href="product-detail.html?slug=hot-zone-hepa-filters" class="nav-dropdown-link" role="menuitem">Hot Zone HEPA Filters</a></li>
-                        <li role="none"><a href="product-detail.html?slug=pre-filters" class="nav-dropdown-link" role="menuitem">Pre-Filters</a></li>
-                        <li role="none"><a href="product-detail.html?slug=cartridge-filters" class="nav-dropd
+:root{--sbs-green-dark:#1b4332;--sbs-green:#2d6a4f;--sbs-green-accent:#52b788;--sbs-green-bright:#7cb518;--sbs-green-pale:#e8f5e9;--sbs-green-soft:#f4f8f2;--sbs-beige:#f7f6f2;--sbs-white:#ffffff;--sbs-gray-100:#f3f5f3;--sbs-gray-400:#9ca3af;--sbs-gray-600:#4b5563;--sbs-gray-800:#1a1f2e;--sbs-font-serif:'Playfair Display',Georgia,serif;--sbs-font-sans:'Poppins',sans-serif;--sbs-pad-x:clamp(24px, 5vw, 80px);--sbs-shadow:0 8px 32px rgba(27, 67, 50, 0.1);--sbs-transition:0.35s cubic-bezier(0.4, 0, 0.2, 1)}body.service-bulk-page{font-family:var(--sbs-font-sans);font-size:calc(14px * var(--type-scale, 1.22));color:var(--sbs-gray-800);line-height:1.65;overflow-x:hidden;background:var(--sbs-white);-webkit-font-smoothing:antialiased}body.service-bulk-page .nav-list a.active{color:#7cb518}body.service-bulk-page .nav-list a.active::after{background:#7cb518}.sbs-sprite{position:absolute;width:0;height:0;overflow:hidden}.sbs-container{width:100%;max-width:100%;margin:0 auto;padding:0 var(--sbs-pad-x)}.sbs-svg-icon{display:block;flex-shrink:0;color:currentColor}.sbs-svg-icon--btn{width:18px;height:18px}.sbs-svg-icon--play{width:20px;height:20px}.sbs-svg-icon--check{width:14px;height:14px;color:var(--sbs-white)}.sbs-svg-icon--pill{width:22px;height:22px;color:var(--sbs-green)}.sbs-svg-icon--step{width:24px;height:24px;color:var(--sbs-green)}.sbs-label-leaf{width:22px;height:22px;object-fit:contain;flex-shrink:0}.sbs-label-leaf--center{display:block;margin:0 auto 10px}.sbs-icon-img{width:28px;height:28px;object-fit:contain;display:block}.sbs-section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sbs-green-bright);margin-bottom:10px}.sbs-section-head{text-align:center;margin-bottom:clamp(28px,4vw,40px)}.sbs-section-head h2{font-family:var(--sbs-font-serif);font-size:clamp(26px, 3vw, 34px);font-weight:700;color:var(--sbs-green-dark);margin:0}.sbs-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;font-size:14px;font-weight:600;border-radius:8px;border:none;cursor:pointer;font-family:inherit;text-decoration:none;transition:transform var(--sbs-transition),box-shadow var(--sbs-transition),background var(--sbs-transition);white-space:nowrap}.sbs-btn-primary{background:linear-gradient(135deg,#1b4332,#2d6a4f);color:var(--sbs-white)}.sbs-btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(27,67,50,.25)}.sbs-btn-video{background:var(--sbs-white);color:var(--sbs-green-dark);border:1.5px solid var(--sbs-green-dark)}.sbs-btn-video:hover{border-color:var(--sbs-green-accent);transform:translateY(-2px)}.sbs-btn-white{background:var(--sbs-white);color:var(--sbs-green-dark)}.sbs-btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.12)}.sbs-btn-outline-white{background:0 0;color:var(--sbs-white);border:1.5px solid rgba(255,255,255,.85)}.sbs-btn-outline-white:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}.sbs-hero{position:relative;overflow:hidden;min-height:clamp(420px,42vw,520px);padding:clamp(120px,14vw,150px) 0 clamp(56px,7vw,72px);background:var(--sbs-white)}.sbs-hero-bg{positi
 ```
 
-## Pattern 4: Validation pattern · index.html
-- Category: validation
+## Pattern 4: Styling / layout system · service-detail.css
+- Category: ui.styling
 - Quality: 95 · Status: approved
 Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Precise Engineering</title>
-    <link rel="icon" href="images/fevicon.png" type="image/png">
-    <meta name="description" content="Precise Engineering is a leading HEPA Filter Manufacturer and Supplier of high-performance ULPA, Cartridge HEPA, and Pharmaceutical Air Filtration Solutions.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="assets/css/premium.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-13ZD2ZZTMD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-13ZD2ZZTMD');
-    </script>
-</head>
-<body>
-
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container header-inner">
-            <a href="#hero" class="logo">
-                <img src="images/logo.png" alt="Precise Engineering">
-            </a>
-            <nav class="nav" id="navMenu" aria-label="Main navigation">
-                <a href="#hero" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About us</a>
-                <div class="nav-dropdown">
-                    <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="navProductsMenu">
-                        Products
-                        <svg class="nav-dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-                    </button>
-                    <ul class="nav-dropdown-menu" id="navProductsMenu" role="menu">
-                        <li role="none"><a href="products.html" class="nav-dropdown-link" role="menuitem">All Products</a></li>
-                        <li role="none" class="nav-dropdown-divider" aria-hidden="true"></li>
-                        <li role="none"><a href="product-detail.html?slug=hepa-filters" class="nav-dropdown-link" role="menuitem">HEPA Filters</a></li>
-                        <li role="none"><a href="product-detail.html?slug=ulpa-filters" class="nav-dropdown-link" role="menuitem">ULPA Filters</a></li>
-                        <li role="none"><a href="product-detail.html?slug=hot-zone-hepa-filters" class="nav-dropdown-link" role="menuitem">Hot Zone HEPA Filters</a></li>
-                        <li role="none"><a href="product-detail.html?slug=pre-filters" class="nav-dropdown-link" role="menuitem">Pre-Filters</a></li>
-                        <li role="none"><a href="product-detail.html?slug=cartridge-filters" class="nav-dropd
+:root{--sd-green-dark:#1b4332;--sd-green:#2d6a4f;--sd-green-accent:#52b788;--sd-green-bright:#7cb518;--sd-green-pale:#e8f5e9;--sd-green-soft:#f4f8f2;--sd-white:#ffffff;--sd-gray-100:#f3f5f3;--sd-gray-400:#9ca3af;--sd-gray-600:#4b5563;--sd-gray-800:#1a1f2e;--sd-font-serif:'Playfair Display',Georgia,serif;--sd-font-sans:'Poppins',sans-serif;--sd-pad-x:clamp(24px, 5vw, 80px);--sd-shadow:0 8px 32px rgba(27, 67, 50, 0.1);--sd-transition:0.35s cubic-bezier(0.4, 0, 0.2, 1)}body.service-detail-page{font-family:var(--sd-font-sans);font-size:calc(14px * var(--type-scale, 1.22));color:var(--sd-gray-800);line-height:1.65;overflow-x:hidden;background:var(--sd-white);-webkit-font-smoothing:antialiased}body.service-detail-page .nav-list a.active{color:#7cb518}body.service-detail-page .nav-list a.active::after{background:#7cb518}.sd-sprite{position:absolute;width:0;height:0;overflow:hidden}.sd-container{width:100%;max-width:100%;margin:0 auto;padding:0 var(--sd-pad-x)}.sd-svg-icon{display:block;flex-shrink:0;color:currentColor}.sd-svg-icon--btn{width:18px;height:18px}.sd-svg-icon--play{width:20px;height:20px}.sd-svg-icon--check{width:14px;height:14px;color:var(--sd-white);flex-shrink:0}.sd-svg-icon--benefit{width:22px;height:22px;color:var(--sd-green)}.sd-label-leaf{width:22px;height:22px;object-fit:contain}.sd-label-leaf--center{display:block;margin:0 auto 10px}.sd-icon-img{width:28px;height:28px;object-fit:contain;display:block}.sd-section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sd-green-bright);margin-bottom:10px}.sd-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;font-size:14px;font-weight:600;border-radius:8px;border:none;cursor:pointer;font-family:inherit;text-decoration:none;transition:transform var(--sd-transition),box-shadow var(--sd-transition),background var(--sd-transition);white-space:nowrap}.sd-btn-primary{background:linear-gradient(135deg,#1b4332,#2d6a4f);color:var(--sd-white)}.sd-btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(27,67,50,.25)}.sd-btn-video{background:var(--sd-white);color:var(--sd-green-dark);border:1.5px solid var(--sd-green-dark)}.sd-btn-video:hover{border-color:var(--sd-green-accent);transform:translateY(-2px)}.sd-btn-white{background:var(--sd-white);color:var(--sd-green-dark)}.sd-btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.12)}.sd-btn-outline-white{background:0 0;color:var(--sd-white);border:1.5px solid rgba(255,255,255,.85)}.sd-btn-outline-white:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}.sd-hero{position:relative;overflow:hidden;min-height:clamp(420px,42vw,520px);padding:clamp(120px,14vw,150px) 0 clamp(56px,7vw,72px);background:var(--sd-white)}.sd-hero-bg{position:absolute;inset:0;z-index:0;background:url('../images/indor banner section image.png') right center/cover no-repeat;pointer-events:none;transform:scale(1);will-change:transform}.sd-hero-overlay{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#fff 0,#fff 34%,rgba(255,255,255,.96) 44%,rgba(255,255,255,.8
 ```

@@ -5,7 +5,7 @@
 - Indexed source files: 27
 - Structural edges: 12
 - Matched end-to-end flows: 0
-- Updated: 2026-08-24T05:33:23.905Z
+- Updated: 2026-08-25T09:20:02.891Z
 
 ## Dependency edges
 - IMPORT industries.html -> styles.css, industries.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
@@ -24,7 +24,7 @@
 - DB inquiry.js -> any, Website
 
 ## Symbols
-- SYMBOL script.js: advanceTrustedSlider, pauseTrustedSlider, resumeTrustedSlider, getProductStep, updateProductDots, advanceProductSlider, pauseProductSlider, resumeProductSlider
+- SYMBOL script.js: advanceTrustedSlider, pauseTrustedSlider, resumeTrustedSlider, getProductStep, updateProductDots, advanceProductSlider, pauseProductSlider, resumeProductSlider, showLightboxImage, openLightbox
 - SYMBOL animations.js: tagAuto, observe, init
 - SYMBOL inquiry.js: buildModal, openModal, closeModal, resetForm, setError, validate, submitForm
 
@@ -37,7 +37,7 @@
 - UI contact.html: #home, #main-nav, #contactForm, #cf-name, #cf-email, #cf-phone, #cf-company, #cf-subject, #cf-message, #footer, .topbar, .container, .topbar__inner, .contact-mini
 - UI career.css: .career-hero, #ffffff, .container, .career-hero-badge, #ff4d4f, #d1d5db, .career-breadcrumbs, #e5e7eb, #ef4444, .red-eyebrow-text, #e52327, .section-center-head, .why-section, .why-grid
 - UI downloads.html: #home, #main-nav, #footer, .topbar, .container, .topbar__inner, .contact-mini, .social-mini, .site-header, .header__inner, .brand, .site-logo-img, .menu-toggle, .sr-only
-- UI gallery.html: #home, #main-nav, #footer, .topbar, .container, .topbar__inner, .contact-mini, .social-mini, .site-header, .header__inner, .brand, .site-logo-img, .menu-toggle, .sr-only
+- UI gallery.html: #home, #main-nav, #footer, #gal-lightbox-modal, #gal-lightbox-img, #gal-lightbox-caption, .topbar, .container, .topbar__inner, .contact-mini, .social-mini, .site-header, .header__inner, .brand
 - UI blog.html: #home, #main-nav, #footer, .topbar, .container, .topbar__inner, .contact-mini, .social-mini, .site-header, .header__inner, .brand, .site-logo-img, .menu-toggle, .sr-only
 - UI products.html: #home, #main-nav, #product-categories, #footer, .topbar, .container, .topbar__inner, .contact-mini, .social-mini, .site-header, .header__inner, .brand, .site-logo-img, .menu-toggle
 - UI projects.html: #home, #main-nav, #footer, .topbar, .container, .topbar__inner, .contact-mini, .social-mini, .site-header, .header__inner, .brand, .site-logo-img, .menu-toggle, .sr-only

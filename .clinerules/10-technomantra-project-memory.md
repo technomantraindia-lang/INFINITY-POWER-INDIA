@@ -6,7 +6,7 @@
 - Technology: HTML/CSS/JavaScript
 - Active file at refresh: None
 - Local code graph: 27 files · 12 edges · 0 matched flows
-- Refreshed: 2026-08-24T05:33:23.906Z
+- Refreshed: 2026-08-25T09:20:02.908Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -88,6 +88,7 @@
 - .clinerules/90-technomantra-selected-agent.md
 - .clinerules/technomantra-developer-learning.md
 - .clinerules/technomantra-team-learning.md
+- .vscode/technomantra-project.json
 - about.css
 - blog.css
 - career.html

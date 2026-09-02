@@ -183,7 +183,7 @@
               <div class="ind-card-body">
                 <h3>Automotive</h3>
                 <p>Advanced automation solutions for automotive manufacturing, assembly lines, robotics integration and process optimization.</p>
-                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+                <a href="#industry-machines" class="ind-card-link">Explore Solutions <span>→</span></a>
               </div>
             </div>
 
@@ -202,7 +202,7 @@
               <div class="ind-card-body">
                 <h3>Chemical &amp; Petrochemical</h3>
                 <p>Reliable and safe automation systems for process control, monitoring, and handling complex chemical manufacturing operations.</p>
-                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+                <a href="#industry-machines" class="ind-card-link">Explore Solutions <span>→</span></a>
               </div>
             </div>
 
@@ -220,7 +220,7 @@
               <div class="ind-card-body">
                 <h3>Pharmaceuticals</h3>
                 <p>Precision automation for pharmaceutical manufacturing, packaging, validation and compliance with global standards.</p>
-                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+                <a href="#industry-machines" class="ind-card-link">Explore Solutions <span>→</span></a>
               </div>
             </div>
 
@@ -241,7 +241,7 @@
               <div class="ind-card-body">
                 <h3>Food &amp; Beverage</h3>
                 <p>End-to-end automation for food processing, packaging, quality control and hygiene management systems.</p>
-                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+                <a href="#industry-machines" class="ind-card-link">Explore Solutions <span>→</span></a>
               </div>
             </div>
 
@@ -258,7 +258,7 @@
               <div class="ind-card-body">
                 <h3>Power &amp; Energy</h3>
                 <p>Smart solutions for power generation, distribution, energy management and renewable energy integration.</p>
-                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+                <a href="#industry-machines" class="ind-card-link">Explore Solutions <span>→</span></a>
               </div>
             </div>
 
@@ -275,7 +275,7 @@
               <div class="ind-card-body">
                 <h3>Water &amp; Wastewater</h3>
                 <p>Automation for water treatment plants, wastewater management, pump stations and process monitoring.</p>
-                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+                <a href="#industry-machines" class="ind-card-link">Explore Solutions <span>→</span></a>
               </div>
             </div>
 
@@ -293,7 +293,7 @@
               <div class="ind-card-body">
                 <h3>Cement</h3>
                 <p>Optimized automation for kiln control, process monitoring, material handling and plant performance.</p>
-                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+                <a href="#industry-machines" class="ind-card-link">Explore Solutions <span>→</span></a>
               </div>
             </div>
 
@@ -310,7 +310,7 @@
               <div class="ind-card-body">
                 <h3>Steel &amp; Metals</h3>
                 <p>Robust automation for material handling, furnace control, quality assurance and production optimization.</p>
-                <a href="contact.html" class="ind-card-link">Explore Solutions <span>→</span></a>
+                <a href="#industry-machines" class="ind-card-link">Explore Solutions <span>→</span></a>
               </div>
             </div>
           </div>
@@ -887,6 +887,15 @@
         });
       });
     })();
+
+    // Make every industry service card open the industry-wise solutions section.
+    document.querySelectorAll('.ind-full-card').forEach(function (card) {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', function (event) {
+        if (event.target.closest('.ind-card-link')) return;
+        window.location.hash = 'industry-machines';
+      });
+    });
   </script>
   </body>
 </html>

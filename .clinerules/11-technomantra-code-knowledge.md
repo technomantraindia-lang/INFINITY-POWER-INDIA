@@ -2,23 +2,23 @@
 
 > Structural local index. Read current source before editing. Secrets are intentionally excluded.
 
-- Indexed source files: 27
+- Indexed source files: 29
 - Structural edges: 12
 - Matched end-to-end flows: 0
-- Updated: 2026-08-25T09:20:02.891Z
+- Updated: 2026-09-03T06:39:01.856Z
 
 ## Dependency edges
-- IMPORT industries.html -> styles.css, industries.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
-- IMPORT contact.html -> styles.css, contact.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
-- IMPORT downloads.html -> styles.css, downloads.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
-- IMPORT gallery.html -> styles.css, gallery.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
-- IMPORT blog.html -> styles.css, blog.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
-- IMPORT products.html -> styles.css, products.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
-- IMPORT projects.html -> styles.css, projects.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
-- IMPORT services.html -> styles.css, services.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
-- IMPORT about.html -> styles.css, about.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
-- IMPORT index.html -> styles.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
-- IMPORT career.html -> styles.css, career.css, inquiry.css, animations.css, script.js, inquiry.js, animations.js
+- IMPORT industries.html -> styles.css, industries.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
+- IMPORT contact.html -> styles.css, contact.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
+- IMPORT downloads.html -> styles.css, downloads.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
+- IMPORT gallery.html -> styles.css, gallery.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
+- IMPORT blog.html -> styles.css, blog.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
+- IMPORT products.html -> styles.css, products.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
+- IMPORT projects.html -> styles.css, projects.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
+- IMPORT services.html -> styles.css, services.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
+- IMPORT about.html -> styles.css, about.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
+- IMPORT index.html -> styles.css, industries.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
+- IMPORT career.html -> styles.css, career.css, inquiry.css, animations.css, dynamic.css, script.js, inquiry.js, animations.js
 
 ## Database references
 - DB inquiry.js -> any, Website
@@ -27,6 +27,7 @@
 - SYMBOL script.js: advanceTrustedSlider, pauseTrustedSlider, resumeTrustedSlider, getProductStep, updateProductDots, advanceProductSlider, pauseProductSlider, resumeProductSlider, showLightboxImage, openLightbox
 - SYMBOL animations.js: tagAuto, observe, init
 - SYMBOL inquiry.js: buildModal, openModal, closeModal, resetForm, setError, validate, submitForm
+- SYMBOL dynamic.js: pageKey, $, $$, heroEl, buildSlides, startSlideshow, go, play, injectCinematic, injectMarquee
 
 ## UI/style selectors
 - UI industries.html: #indmach-cards-style, #home, #main-nav, #industry-machines, #indmach-textile, #indmach-steel, #indmach-paper, #indmach-plastic, #indmach-wooden, #indmach-food, #footer, .topbar, .container, .topbar__inner
@@ -43,7 +44,7 @@
 - UI projects.html: #home, #main-nav, #footer, .topbar, .container, .topbar__inner, .contact-mini, .social-mini, .site-header, .header__inner, .brand, .site-logo-img, .menu-toggle, .sr-only
 - UI services.html: #home, #main-nav, #footer, .topbar, .container, .topbar__inner, .contact-mini, .social-mini, .site-header, .header__inner, .brand, .site-logo-img, .menu-toggle, .sr-only
 - UI about.html: #home, #main-nav, #about, #journey, #whatwedo, #team, #certifications, #why, #contact, #footer, .topbar, .container, .topbar__inner, .contact-mini
-- UI index.html: #home, #main-nav, #trust-list, #about, #products, #product-list, #services, #industries, #industry-list, #projects, #gallery, #faq, #contact, #footer
+- UI index.html: #home, #main-nav, #trust-list, #about, #products, #product-list, #services, #industries, #industry-list, #industry-machines, #indmach-textile, #indmach-steel, #indmach-paper, #indmach-plastic
 - UI styles.css: .container, .sr-only, .topbar, .topbar__inner, .contact-mini, .social-mini, .site-header, .brand, .main-nav, .active, .menu-toggle, .hero, .hero__wash, .btn
 - UI about.css: .au-hero, #fff, .au-hero__bg, .au-hero__overlay, .au-hero__content, .au-hero__eyebrow, #fca5a5, .au-hero__tagline, #c7dcf5, .au-breadcrumb, .au-section-eyebrow, #ed2626, .au-section-sub, .au-intro
 - UI blog.css: .blog-hero, #ffffff, .container, .blog-hero-badge, #ed2626, #ff4d4d, #cbd5e1, .blog-breadcrumbs, .sep, .current, .blog-section, .blog-layout, .blog-header-row, .blog-header-title

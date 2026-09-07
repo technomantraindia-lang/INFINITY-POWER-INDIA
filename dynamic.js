@@ -85,7 +85,7 @@
     ['assets/rikin/sectional-drive-panel-system.jpg', 'Drive Panel System'],
     ['assets/rikin/injection-moulding.webp', 'Injection Moulding'],
     ['assets/rikin/pvc-pipe-plant.jpg', 'PVC Pipe Plant'],
-    ['assets/rikin/dairy-equipment.webp', 'Dairy Automation'],
+    ['assets/rikin/dairy-equipment.webp', 'Textile Machine'],
     ['assets/rikin/embroidery-machine.webp', 'Embroidery Machine'],
     ['assets/rikin/paper-mill-automation.jpg', 'Paper Mill'],
     ['assets/rikin/slitter-rewinder.webp', 'Slitter Rewinder'],
@@ -94,16 +94,16 @@
   ];
 
   var SERVICE_PHOTOS = [
-    'assets/rikin/sectional-drive-panel-system.jpg',
+    'assets/cat-panel-hd.png',
     'assets/rikin/cnc-laser-cutting.jpg',
     'assets/about-control-panel.png',
-    'assets/rikin/benninger-sectional-warper.jpg',
+    'assets/cat-plc-hd.png',
     'assets/cat-hmi-hd.png',
     'assets/cat-scada-hd.png',
     'assets/cat-vfd-hd.png',
     'assets/cat-servo-hd.png',
-    'assets/rikin/paper-mill-automation.jpg',
-    'assets/rikin/tape-plant-cheese-winder.jpg',
+    'assets/rikin/stenter-machine.webp',
+    'assets/rikin/benninger-sectional-warper.jpg',
     'assets/rikin/sheet-metal-straightener.jpg',
     'assets/rikin/steam-boiler.webp'
   ];

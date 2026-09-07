@@ -5,8 +5,8 @@
 - Workspace: infitypower (2)
 - Technology: HTML/CSS/JavaScript
 - Active file at refresh: None
-- Local code graph: 27 files · 12 edges · 0 matched flows
-- Refreshed: 2026-08-25T09:20:02.908Z
+- Local code graph: 29 files · 12 edges · 0 matched flows
+- Refreshed: 2026-09-03T06:39:01.871Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: html-static
@@ -24,9 +24,9 @@
 - about.css
 - blog.css
 - downloads.css
+- dynamic.css
 - gallery.css
 - products.css
-- projects.css
 
 ## Recently edited files
 - industries.html
@@ -93,6 +93,8 @@
 - blog.css
 - career.html
 - downloads.css
+- dynamic.css
+- dynamic.js
 - gallery.css
 - products.css
 - projects.css

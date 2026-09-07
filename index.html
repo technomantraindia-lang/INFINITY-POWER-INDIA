@@ -82,7 +82,35 @@
       </section>
 
       <section class="trust section-pad--small" aria-label="Trusted by industry leaders">
-        <div class="container"><p class="section-line">Trusted by Industry Leaders</p><div class="trust__track"><button class="round-arrow" data-scroll="trust-list" data-direction="-1" aria-label="Previous clients">‹</button><div class="trust__logos" id="trust-list"><b>Johnson<br />Screens</b><b>Aqseptence<br />Group</b><b>Amul<br />Dairy</b><b>Rajratna</b><b>HyFun<br />Foods</b><b>Balaji<br />Wafers</b><b>Arvind<br />Mills</b><b>Tata<br />Steel</b><b>TATA<br />Motors</b></div><button class="round-arrow" data-scroll="trust-list" data-direction="1" aria-label="Next clients">›</button></div></div>
+        <div class="container">
+          <p class="section-line">Trusted by Industry Leaders</p>
+          <div class="trust__track">
+            <button class="round-arrow" data-scroll="trust-list" data-direction="-1" aria-label="Previous clients">‹</button>
+            <div class="trust__logos" id="trust-list">
+              <div class="trust__logo-item"><img src="logo/amul.png" alt="Amul Dairy" title="Amul Dairy" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/coca-cola.png" alt="Hindustan Coca-Cola Beverages" title="Hindustan Coca-Cola Beverages" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/hp-petroleum.png" alt="Hindustan Petroleum" title="Hindustan Petroleum" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/tata-steel.png" alt="Tata Steel" title="Tata Steel" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/tata-motors.png" alt="Tata Motors" title="Tata Motors" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/torrent-power.png" alt="Torrent Power" title="Torrent Power" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/nirma.png" alt="Nirma" title="Nirma" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/psp-projects.png" alt="PSP Projects Limited" title="PSP Projects Limited" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/balaji-wafers.png" alt="Balaji Wafers" title="Balaji Wafers" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/johnson-screens.png" alt="Johnson Screens" title="Johnson Screens" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/raajratna.png" alt="Raajratna" title="Raajratna" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/aqseptence-group.png" alt="Aqseptence Group" title="Aqseptence Group" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/arvind-mills.png" alt="Arvind Mills" title="Arvind Mills" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/hyfun-foods.png" alt="HyFun Foods" title="HyFun Foods" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/tirupati-oils.png" alt="Tirupati Edible Oils" title="Tirupati Edible Oils" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/laxmi-namkeen.png" alt="Laxmi Namkeen" title="Laxmi Namkeen" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/real-namkeen.png" alt="Real Namkeen" title="Real Namkeen" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/steelco-gujarat.png" alt="Steelco Gujarat" title="Steelco Gujarat" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/mayur.png" alt="Mayur" title="Mayur" loading="lazy" /></div>
+              <div class="trust__logo-item"><img src="logo/friends-steel.png" alt="Friends Steel" title="Friends Steel" loading="lazy" /></div>
+            </div>
+            <button class="round-arrow" data-scroll="trust-list" data-direction="1" aria-label="Next clients">›</button>
+          </div>
+        </div>
       </section>
 
       <section class="section about" id="about">
@@ -596,6 +624,9 @@
     <script src="animations.js"></script>
     <script src="dynamic.js"></script>
     <script>
+      document.querySelectorAll('#services .service-card').forEach(function (card) {
+        card.setAttribute('href', '#industry-machines');
+      });
       (function () {
         var section = document.getElementById('industry-machines');
         if (!section) return;

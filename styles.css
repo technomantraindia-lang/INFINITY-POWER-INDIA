@@ -1143,12 +1143,13 @@ img { max-width:100%; display:block; }
 }
 
 .footer-logo-img {
-  height: 88px;
-  max-width: 400px;
+  height: 60px;
+  max-width: 320px;
   background: #ffffff;
-  padding: 10px 22px;
+  padding: 8px 18px;
   border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  display: block;
 }
 
 .brand--footer {
@@ -1156,7 +1157,24 @@ img { max-width:100%; display:block; }
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  background: #ffffff;
+  padding: 8px 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.brand--footer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.brand--footer .site-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .brand--footer .brand__mark {

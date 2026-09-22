@@ -1155,13 +1155,16 @@ img { max-width:100%; display:block; }
 .brand--footer {
   display: inline-flex;
   align-items: center;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: max-content;
   gap: 10px;
   text-decoration: none;
   margin-bottom: 18px;
   background: #ffffff;
-  padding: 8px 18px;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -1171,8 +1174,9 @@ img { max-width:100%; display:block; }
 }
 
 .brand--footer .site-logo-img {
-  height: 44px;
+  height: 64px;
   width: auto;
+  max-width: 280px;
   object-fit: contain;
   display: block;
 }

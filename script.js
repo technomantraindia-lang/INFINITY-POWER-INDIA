@@ -182,25 +182,30 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Filter Pill Buttons Logic for Gallery & Projects pages
-  const filterPills = document.querySelectorAll('.filter-pill');
+  const filterPills = document.querySelectorAll('.gal-filter-pills .filter-pill, .proj-filter-pills .filter-pill');
   filterPills.forEach((pill) => {
     pill.addEventListener('click', () => {
-      filterPills.forEach((p) => p.classList.remove('active'));
+      const container = pill.closest('.gal-filter-pills, .proj-filter-pills') || pill.parentElement;
+      container.querySelectorAll('.filter-pill').forEach((p) => p.classList.remove('active'));
       pill.classList.add('active');
 
-      const category = pill.textContent.trim().toLowerCase();
-      const items = document.querySelectorAll('.gal-item, .proj-card');
+      const filterAttr = pill.getAttribute('data-filter') || '';
+      const category = (filterAttr || pill.textContent.trim()).toLowerCase();
+      const parentSection = pill.closest('section') || document;
+      const items = parentSection.querySelectorAll('.gal-item, .proj-card');
       
       items.forEach((item) => {
-        if (category === 'all' || category === 'all projects') {
+        const itemCat = (item.getAttribute('data-category') || '').toLowerCase();
+        const text = item.textContent.toLowerCase();
+
+        if (category === 'all' || category === 'all projects' || category === 'all photos') {
+          item.style.display = '';
+        } else if (filterAttr && itemCat === filterAttr) {
+          item.style.display = '';
+        } else if (itemCat.includes(category) || text.includes(category) || (category.includes('project') && (itemCat.includes('project') || text.includes('project')))) {
           item.style.display = '';
         } else {
-          const text = item.textContent.toLowerCase();
-          if (text.includes(category)) {
-            item.style.display = '';
-          } else {
-            item.style.display = 'none';
-          }
+          item.style.display = 'none';
         }
       });
     });

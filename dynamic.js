@@ -170,13 +170,13 @@
     ['wood sheet', 'assets/rikin/wood-sheet-cutting.webp'],
     ['finger joint', 'assets/rikin/finger-joint-machine.webp'],
     ['wooden', 'assets/rikin/wood-sheet-cutting.webp'],
-    ['dairy', 'assets/rikin/dairy-equipment.webp'],
-    ['butter', 'assets/rikin/dairy-equipment.webp'],
-    ['paneer', 'assets/rikin/dairy-equipment.webp'],
-    ['powder', 'assets/rikin/dairy-equipment.webp'],
-    ['milk', 'assets/rikin/dairy-equipment.webp'],
-    ['cold storage', 'assets/rikin/dairy-equipment.webp'],
-    ['bottle', 'assets/rikin/automatic-pouch-packing-machine.jpg']
+    ['dairy', 'assets/rikin/dairy-machinery.jpg'],
+    ['butter', 'assets/rikin/butter-making.jpg'],
+    ['paneer', 'assets/rikin/paneer-plant.jpg'],
+    ['powder', 'assets/rikin/dairy-machinery.jpg'],
+    ['milk', 'assets/rikin/automatic-pouch-packing-machine.jpg'],
+    ['cold storage', 'assets/rikin/sectional-drive-panel-system.jpg'],
+    ['bottle', 'assets/rikin/spm-packing-machine.jpg']
   ];
 
   function pageKey() {
@@ -323,7 +323,7 @@
     var dock = document.createElement('div');
     dock.className = 'cine-dock';
     dock.innerHTML =
-      '<a class="cine-dock__wa" href="https://wa.me/919978973722" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">' +
+      '<a class="cine-dock__wa" href="https://wa.me/919979877272" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">' +
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 17.2L1 23l6-1.6A11 11 0 1 0 20.5 3.5zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3.5.9.9-3.4-.2-.3A9 9 0 1 1 12 20.5zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.4 7.4 0 0 1-2.2-1.4 8 8 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.4-.5.3-.4c.1-.2 0-.3 0-.5l-.9-2.1c-.2-.6-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3s-1 1-1 2.4 1 2.8 1.2 3a12.5 12.5 0 0 0 4.8 4.2c.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3s.3-1.2.2-1.3-.3-.2-.6-.3z"/></svg>' +
       '<span>WhatsApp</span></a>' +
       '<button type="button" class="cine-dock__inq" data-inquiry-open aria-label="Open inquiry form">' +
@@ -411,7 +411,7 @@
     $$('.indmach-list li').forEach(function (li) {
       if (li.querySelector('.cine-mach-thumb')) return;
       var label = (li.textContent || '').trim();
-      var src = 'assets/rikin/sectional-drive-panel-system.jpg';
+      var src = 'assets/rikin/automatic-pouch-packing-machine.jpg';
       var key = label.toLowerCase();
       for (var i = 0; i < MACHINE_PHOTOS.length; i++) {
         if (key.indexOf(MACHINE_PHOTOS[i][0]) !== -1) {
